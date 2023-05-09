@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "miles-blocks/miles-business-card",
+  "version": "0.1.0",
+  "title": "Miles Businesss Card Block",
+  "category": "widgets",
+  "icon": "businessperson",
+  "description": "Example block scaffolded with Create Block tool.",
+  "attributes": {
+    "variant": {
+      "type": "string"
+    },
+    "cvemail": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "jobtitle": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "miles-editor-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

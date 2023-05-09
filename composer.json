@@ -1,0 +1,22 @@
+{
+	"name": "vendor_name/miles-editor-blocks",
+	"type": "wordpress-plugin",
+	"repositories":[
+		{
+			"type": "package",
+			"package": {
+				"name": "miles-no/miles_web_components",
+				"version": "1.2.3",
+				"type": "project",
+				"dist": {
+					"url": "https://github.com/miles-no/miles_web_components/archive/refs/heads/main.zip",
+					"type": "zip"
+				}
+			}
+		}
+	],
+	"require": {
+		"composer/installers": "^1.0",
+		"miles-no/miles_web_components": "1.2.3"
+	}
+}
