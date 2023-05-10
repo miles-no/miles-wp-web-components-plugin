@@ -28,3 +28,16 @@ node_modules/
 
 # dotenv environment variables file
 .env
+/vendor/miles-no/miles_web_components/src/
+/vendor/miles-no/miles_web_components/.github/
+/vendor/miles-no/miles_web_components/.vscode/
+/vendor/miles-no/miles_web_components/.eslintrc.json
+/vendor/miles-no/miles_web_components/.gitignore
+/vendor/miles-no/miles_web_components/.prettierrc
+/vendor/miles-no/miles_web_components/index.html
+/vendor/miles-no/miles_web_components/main.js
+/vendor/miles-no/miles_web_components/package.json
+/vendor/miles-no/miles_web_components/package-lock.json
+/vendor/miles-no/miles_web_components/README.md
+/vendor/miles-no/miles_web_components/style.css
+/vendor/miles-no/miles_web_components/vite.config.js
