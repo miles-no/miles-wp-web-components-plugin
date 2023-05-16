@@ -11,6 +11,9 @@
     "variant": {
       "type": "string"
     },
+    "wide": {
+      "type": "boolean"
+    },
     "cvemail": {
       "type": "string"
     },

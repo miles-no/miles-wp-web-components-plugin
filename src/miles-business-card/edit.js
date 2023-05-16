@@ -13,7 +13,11 @@ import { __ } from '@wordpress/i18n';
  */
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import ServerSideRender from '@wordpress/server-side-render';
-import {Panel, PanelBody, PanelRow, TextControl, SelectControl} from '@wordpress/components';
+import {Panel, PanelBody, PanelRow, TextControl, SelectControl, ToggleControl} from '@wordpress/components';
+import { useState } from '@wordpress/element';
+
+import {MilesBusinessCard} from "miles-wc/public/miles-wc.es";
+
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -22,7 +26,7 @@ import {Panel, PanelBody, PanelRow, TextControl, SelectControl} from '@wordpress
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import './editor.scss';
-import { name } from './block.json';
+import blockInfo from './block.json';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -37,8 +41,9 @@ import { name } from './block.json';
 
 export default function Edit({attributes, setAttributes	}) {
 
-	function changeVariant(changedVariant) {
-		setAttributes({variant: changedVariant});
+
+	function toggleWide(state) {
+		setAttributes({variant: state ? 'wide' : ''});
 	}
 
 	function changeCvEmail(changedCvEmail) {
@@ -67,34 +72,23 @@ export default function Edit({attributes, setAttributes	}) {
 		<p { ...useBlockProps() }>
 			<InspectorControls>
 				<Panel header='Business Card Settings'>
-					<PanelBody title='Basics'>
+					<PanelBody title='Basics' initialOpen={ true }>
 						<PanelRow>
-
-							<SelectControl
-								onChange={changeVariant}
-								options={[
-									{
-										disabled: true,
-										label: 'Select a Variant',
-										value: ''
-									},
-									{
-										label: 'Wide',
-										value: 'wide'
-									},
-									{
-										label: 'Option B',
-										value: 'b'
-									}
-								]}
+							<ToggleControl
+								checked={(attributes.variant == 'wide') }
+								help={(attributes.variant == 'wide') ? 'Yes' : 'No'}
+								label="Use wide layout."
+								onChange={toggleWide}
 							/>
-							</PanelRow>
+						</PanelRow>
+
 						<PanelRow>
-							<TextControl label="CV Partner e-mail" onChange={changeCvEmail} value={attributes.cvemail}/>
+							<TextControl label="CV Partner e-mail" help="Write in email-address to try to fetch data from CV-partner" onChange={changeCvEmail} value={attributes.cvemail}/>
 						</PanelRow>
 					</PanelBody>
 
-					<PanelBody title='Manual data'>
+					<PanelBody title='Manual data' initialOpen={false} >
+						<PanelRow><p>This will override data from CV-partner.</p></PanelRow>
 						<PanelRow>
 							<TextControl label="Name" onChange={changeName} value={attributes.name}/>
 						</PanelRow>
@@ -114,7 +108,7 @@ export default function Edit({attributes, setAttributes	}) {
 
 				</Panel>
 			</InspectorControls>
-			<ServerSideRender block={name} attributes={attributes} />
+			<ServerSideRender block={blockInfo.name} attributes={attributes} />
 		</p>
 
 );

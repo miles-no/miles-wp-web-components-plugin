@@ -20,7 +20,8 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_miles_editor_blocks_block_init() {
+function create_block_miles_editor_blocks_block_init(): void
+{
 	register_block_type( __DIR__ . '/build/miles-business-card' );
 	register_block_type( __DIR__ . '/build/block-three' );
 }
