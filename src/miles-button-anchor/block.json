@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "miles-blocks/miles-button-anchor",
+	"version": "0.1.0",
+	"title": "Button anchor",
+	"category": "widgets",
+	"icon": "links",
+	"supports": {
+		"html": true,
+		"anchor": true,
+		"align": ["wide", "full"],
+		"alignText": true
+	},
+	"attributes": {
+		"content": {
+			"type": "string",
+			"selector": "div"
+		},
+		"href" : {
+			"type": "string"
+		}
+	},
+	"textdomain": "miles-button-anchor",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
