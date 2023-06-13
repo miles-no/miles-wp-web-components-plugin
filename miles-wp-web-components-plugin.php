@@ -3,7 +3,7 @@
  * Plugin Name:       Miles WP Web Components
  * Description:       A plugin to include web components and make them available in editor blocks.
  * Requires at least: 6.1
- * Requires PHP:      8.1
+ * Requires PHP:      8.0
  * Version:           0.1.0
  * Author:            The WordPress Contributors
  * License:           GPL-2.0-or-later
