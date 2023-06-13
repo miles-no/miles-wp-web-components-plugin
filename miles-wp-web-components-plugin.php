@@ -24,7 +24,7 @@ function create_block_miles_editor_blocks_block_init(): void
 {
 	register_block_type( __DIR__ . '/build/miles-business-card' );
 	register_block_type( __DIR__ . '/build/miles-contact-card' );
-#	register_block_type( __DIR__ . '/build/miles-button-anchor' );
+	register_block_type( __DIR__ . '/build/miles-button-anchor' );
 #	register_block_type( __DIR__ . '/build/miles-office-banner' );
 }
 add_action( 'init', 'create_block_miles_editor_blocks_block_init' );
