@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/miles-business-card/edit.js":
-/*!*****************************************!*\
-  !*** ./src/miles-business-card/edit.js ***!
-  \*****************************************/
+/***/ "./src/miles-contact-card/edit.js":
+/*!****************************************!*\
+  !*** ./src/miles-contact-card/edit.js ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -23,8 +23,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var miles_wc_public_miles_wc_es__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! miles-wc/public/miles-wc.es */ "./node_modules/miles-wc/public/miles-wc.es.js");
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./editor.scss */ "./src/miles-business-card/editor.scss");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./block.json */ "./src/miles-business-card/block.json");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./editor.scss */ "./src/miles-contact-card/editor.scss");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./block.json */ "./src/miles-contact-card/block.json");
 
 /**
  * Retrieves the translation of text.
@@ -44,14 +44,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
  * Those files can contain any CSS code that gets applied to the editor.
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-
 
 
 /**
@@ -62,25 +60,19 @@ __webpack_require__.r(__webpack_exports__);
  *
  * @return {WPElement} Element to render.
  */
-
 function Edit(_ref) {
   let {
     attributes,
     setAttributes
   } = _ref;
-  function toggleWide(state) {
-    setAttributes({
-      variant: state ? 'wide' : ''
-    });
-  }
-  function changeCvEmail(changedCvEmail) {
-    setAttributes({
-      cvemail: changedCvEmail
-    });
-  }
   function changeName(changedName) {
     setAttributes({
       name: changedName
+    });
+  }
+  function changeAddress(changedAddress) {
+    setAttributes({
+      address: changedAddress
     });
   }
   function changeEmail(changedEmail) {
@@ -88,60 +80,42 @@ function Edit(_ref) {
       email: changedEmail
     });
   }
-  function changeJobTitle(changedJobTitle) {
-    setAttributes({
-      jobtitle: changedJobTitle
-    });
-  }
   function changePhone(changedPhone) {
     setAttributes({
       phone: changedPhone
     });
   }
-  function changeImageUrl(changedImageUrl) {
+  function changeOrgnr(changedOrgnr) {
     setAttributes({
-      image: changedImageUrl
+      orgnr: changedOrgnr
     });
   }
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Panel, {
-    header: "Business Card Settings"
+    header: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Contact Card Settings', 'miles-contact-card')
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
-    title: "Basics",
-    initialOpen: true
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
-    checked: attributes.variant == 'wide',
-    help: attributes.variant == 'wide' ? 'Yes' : 'No',
-    label: "Use wide layout.",
-    onChange: toggleWide
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: "CV Partner e-mail",
-    help: "Write in email-address to try to fetch data from CV-partner",
-    onChange: changeCvEmail,
-    value: attributes.cvemail
-  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
-    title: "Manual data",
-    initialOpen: false
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "This will override data from CV-partner.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: "Name",
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Contact Card Settings', 'miles-contact-card')
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Name', 'miles-contact-card'),
     onChange: changeName,
     value: attributes.name
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: "Job title",
-    onChange: changeJobTitle,
-    value: attributes.jobtitle
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Address', 'miles-contact-card'),
+    onChange: changeAddress,
+    value: attributes.address
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: "E-mail",
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('E-mail', 'miles-contact-card'),
     onChange: changeEmail,
     value: attributes.email
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: "Phone",
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Phone', 'miles-contact-card'),
     onChange: changePhone,
     value: attributes.phone
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: "Image URL",
-    onChange: changeImageUrl,
-    value: attributes.image
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Orgnr', 'miles-contact-card'),
+    onChange: changeOrgnr,
+    value: attributes.orgnr
   }))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)((_wordpress_server_side_render__WEBPACK_IMPORTED_MODULE_3___default()), {
+    skipBlockSupportAttributes: true,
     block: _block_json__WEBPACK_IMPORTED_MODULE_7__.name,
     attributes: attributes
   }));
@@ -149,18 +123,18 @@ function Edit(_ref) {
 
 /***/ }),
 
-/***/ "./src/miles-business-card/index.js":
-/*!******************************************!*\
-  !*** ./src/miles-business-card/index.js ***!
-  \******************************************/
+/***/ "./src/miles-contact-card/index.js":
+/*!*****************************************!*\
+  !*** ./src/miles-contact-card/index.js ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/miles-business-card/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/miles-business-card/edit.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block.json */ "./src/miles-business-card/block.json");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/miles-contact-card/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/miles-contact-card/edit.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block.json */ "./src/miles-contact-card/block.json");
 /**
  * Registers a new block provided a unique name and an object defining its behavior.
  *
@@ -197,10 +171,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/miles-business-card/editor.scss":
-/*!*********************************************!*\
-  !*** ./src/miles-business-card/editor.scss ***!
-  \*********************************************/
+/***/ "./src/miles-contact-card/editor.scss":
+/*!********************************************!*\
+  !*** ./src/miles-contact-card/editor.scss ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -209,10 +183,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/miles-business-card/style.scss":
-/*!********************************************!*\
-  !*** ./src/miles-business-card/style.scss ***!
-  \********************************************/
+/***/ "./src/miles-contact-card/style.scss":
+/*!*******************************************!*\
+  !*** ./src/miles-contact-card/style.scss ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -289,31 +263,31 @@ module.exports = window["wp"]["serverSideRender"];
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "MilesArrow": () => (/* binding */ Ze),
-/* harmony export */   "MilesArrowNav": () => (/* binding */ Te),
-/* harmony export */   "MilesAuthorCard": () => (/* binding */ De),
-/* harmony export */   "MilesBanner": () => (/* binding */ et),
-/* harmony export */   "MilesBlogCard": () => (/* binding */ Ne),
-/* harmony export */   "MilesBulb": () => (/* binding */ fe),
-/* harmony export */   "MilesBusinessCard": () => (/* binding */ re),
-/* harmony export */   "MilesButtonAnchor": () => (/* binding */ ke),
-/* harmony export */   "MilesCloud": () => (/* binding */ pe),
-/* harmony export */   "MilesContactCard": () => (/* binding */ Ge),
-/* harmony export */   "MilesCup": () => (/* binding */ ve),
-/* harmony export */   "MilesCurve": () => (/* binding */ ue),
-/* harmony export */   "MilesFagbloggTeaser": () => (/* binding */ ze),
-/* harmony export */   "MilesImageSlider": () => (/* binding */ He),
-/* harmony export */   "MilesInfo": () => (/* binding */ Me),
-/* harmony export */   "MilesInfoBlock": () => (/* binding */ Xe),
-/* harmony export */   "MilesLogo": () => (/* binding */ xe),
-/* harmony export */   "MilesOfficeBanner": () => (/* binding */ Ie),
-/* harmony export */   "MilesOverlapBlock": () => (/* binding */ Be),
-/* harmony export */   "MilesPodcastCard": () => (/* binding */ Ye),
-/* harmony export */   "MilesPodcastTeaser": () => (/* binding */ Le),
-/* harmony export */   "MilesPodd": () => (/* binding */ we),
-/* harmony export */   "MilesProfileCard": () => (/* binding */ Ee),
-/* harmony export */   "MilesZoom": () => (/* binding */ be),
-/* harmony export */   "SiteMenu": () => (/* binding */ Ke)
+/* harmony export */   MilesArrow: () => (/* binding */ Ze),
+/* harmony export */   MilesArrowNav: () => (/* binding */ Te),
+/* harmony export */   MilesAuthorCard: () => (/* binding */ De),
+/* harmony export */   MilesBanner: () => (/* binding */ et),
+/* harmony export */   MilesBlogCard: () => (/* binding */ Ne),
+/* harmony export */   MilesBulb: () => (/* binding */ fe),
+/* harmony export */   MilesBusinessCard: () => (/* binding */ re),
+/* harmony export */   MilesButtonAnchor: () => (/* binding */ ke),
+/* harmony export */   MilesCloud: () => (/* binding */ pe),
+/* harmony export */   MilesContactCard: () => (/* binding */ Ge),
+/* harmony export */   MilesCup: () => (/* binding */ ve),
+/* harmony export */   MilesCurve: () => (/* binding */ ue),
+/* harmony export */   MilesFagbloggTeaser: () => (/* binding */ ze),
+/* harmony export */   MilesImageSlider: () => (/* binding */ He),
+/* harmony export */   MilesInfo: () => (/* binding */ Me),
+/* harmony export */   MilesInfoBlock: () => (/* binding */ Xe),
+/* harmony export */   MilesLogo: () => (/* binding */ xe),
+/* harmony export */   MilesOfficeBanner: () => (/* binding */ Ie),
+/* harmony export */   MilesOverlapBlock: () => (/* binding */ Be),
+/* harmony export */   MilesPodcastCard: () => (/* binding */ Ye),
+/* harmony export */   MilesPodcastTeaser: () => (/* binding */ Le),
+/* harmony export */   MilesPodd: () => (/* binding */ we),
+/* harmony export */   MilesProfileCard: () => (/* binding */ Ee),
+/* harmony export */   MilesZoom: () => (/* binding */ be),
+/* harmony export */   SiteMenu: () => (/* binding */ Ke)
 /* harmony export */ });
 var he = Object.defineProperty;
 var me = (s, e, i) => e in s ? he(s, e, { enumerable: !0, configurable: !0, writable: !0, value: i }) : s[e] = i;
@@ -567,7 +541,7 @@ X.innerHTML = `
             }
 
             path {
-              transition: fill 0.5s ubic-bezier(0.42, 0.16, 0.07, 0.96);
+              transition: all 1s cubic-bezier(0.42, 0.16, 0.07, 0.96);
             }
           </style>
           <div class="icon">
@@ -593,9 +567,7 @@ class we extends HTMLElement {
     return ["color"];
   }
   attributeChangedCallback(e, i, t) {
-    e === "color" && (t && t.length > 0 ? this.svgEl.setAttribute("fill", t) : this.svgEl.setAttribute("fill", "currentColor"));
-  }
-  connectedCallback() {
+    e === "color" && (t && t.length > 0 ? (this.svgEl.setAttribute("fill", t), this.svgEl.style.transform = "scale(1.03)") : (this.svgEl.setAttribute("fill", "currentColor"), this.svgEl.style.transform = "scale(1)"));
   }
 }
 const y = "miles-pod";
@@ -752,10 +724,10 @@ class Me extends HTMLElement {
   constructor() {
     super();
     n(this, "removeColor", (i) => {
-      this.mic.removeAttribute("color"), console.log("remove color");
+      this.mic.removeAttribute("color");
     });
     n(this, "addColor", (i) => {
-      this.mic.setAttribute("color", "#ff303b"), console.log("add color");
+      this.mic.setAttribute("color", "#ff303b");
     });
     n(this, "goTo", () => {
       window.location.href = escape(this.link);
@@ -1119,7 +1091,8 @@ class Be extends HTMLElement {
       "Smidig Coaching",
       "Design",
       "Arkitektur",
-      "Rådgivning"
+      "Rådgivning",
+      "Team as a service"
     ], i = document.createElement("ul");
     e.forEach((t) => {
       const o = document.createElement("li");
@@ -1204,7 +1177,7 @@ class Ze extends HTMLElement {
 }
 const $ = "miles-arrow";
 customElements.get($) || customElements.define($, Ze);
-const Oe = `:host{display:block;color:inherit;--image-width: 120px}#card-wrapper{box-sizing:border-box}#card{max-width:400px;margin:0 auto;background-color:var(--miles_secondary_four);border-radius:4px;display:flex;flex-direction:row;gap:1em}#card.author{max-width:100%;background-color:transparent}#card.wide{flex-direction:column;background-color:transparent}@media (min-width: 768px){#card.wide{max-width:100%;margin:0;max-height:calc(var(--image-width) / 2);flex-direction:row}}h3{margin:0}#title{margin-bottom:.5em}#card.wide span#title{order:0}#card.wide #name{order:1}#card.wide span{order:2}figure{margin:0;padding:0;aspect-ratio:1/1;width:var(--image-width);min-width:var(--image-width);overflow:hidden}@media (min-width: 768px){#card.wide figure{justify-content:center;display:flex;aspect-ratio:2 / 3;width:var(--image-width);min-width:var(--image-width);background-color:#fff}}::slotted(img),img{object-fit:cover;width:100%;background-color:#fff;filter:grayscale(1);aspect-ratio:1 / 1;border-radius:50%}#card.wide ::slotted(img),#card.wide img{border-radius:0;aspect-ratio:1 / 1;min-width:100%}@media (min-width: 768px){#card.wide ::slotted(img),#card.wide img{width:calc(var(--image-width) / 2);min-width:calc(var(--image-width) / 2)}}::slotted(*){color:inherit}#extras{background-color:var(--miles_secondary_four)}a,span{color:inherit;text-decoration:none;display:inline}span{display:flex;flex-direction:column;overflow:hidden;line-height:1.2em;gap:.2em}#card.wide span{flex-direction:row}#group{display:flex;flex-direction:column;gap:.2em}#card.author #group{justify-content:center;display:flex;flex-direction:column;gap:.5em}#card.wide #group{background-color:#f8ebe8;width:unset;padding:1rem 2rem;justify-content:center}@media (min-width: 768px){#card.wide #group{padding:0 2rem;width:100%}}#email_el,#phone_el{display:none}
+const Oe = `:host{display:block;color:var(--miles_secondary_four, inherit);--image-width: 120px}#card-wrapper{box-sizing:border-box}#card{letter-spacing:.02em;max-width:400px;margin:0 auto;background-color:var(--miles_secondary_four);border-radius:4px;display:flex;flex-direction:row;gap:1em}#card.author{max-width:100%;background-color:transparent}#card.wide{flex-direction:column;background-color:transparent}@media (min-width: 768px){#card.wide{max-width:100%;margin:0;max-height:calc(var(--image-width) / 2);flex-direction:row}}h3{margin:0;font-size:24px;font-style:normal;font-weight:700}#title{margin-bottom:.5em;line-height:22px}#card.wide span#title{order:0}#card.wide span{order:2}figure{margin:0;padding:0;aspect-ratio:1/1;width:var(--image-width);min-width:var(--image-width);overflow:hidden}@media (min-width: 768px){#card.wide figure{justify-content:center;display:flex;aspect-ratio:2 / 3;width:var(--image-width);min-width:var(--image-width);background-color:#fff}}::slotted(img),img{object-fit:cover;width:100%;background-color:#fff;filter:grayscale(1);aspect-ratio:1 / 1;border-radius:50%}#card.wide ::slotted(img),#card.wide img{border-radius:0;aspect-ratio:1 / 1;min-width:100%}@media (min-width: 768px){#card.wide ::slotted(img),#card.wide img{width:calc(var(--image-width) / 2);min-width:calc(var(--image-width) / 2)}}::slotted(*){color:inherit}#extras{background-color:var(--miles_secondary_four)}a,span{color:inherit;text-decoration:none;display:inline}span{display:flex;flex-direction:column;overflow:hidden;line-height:1.2em;gap:.2em}#card.wide span{flex-direction:row}#group{display:flex;flex-direction:column;gap:.2em}#card.author #group{justify-content:center;display:flex;flex-direction:column;gap:.5em}#card.wide #group{background-color:#f8ebe8;width:unset;padding:1rem 2rem;justify-content:center}@media (min-width: 768px){#card.wide #group{padding:0 2rem;width:100%}}
 `, se = document.createElement("template");
 se.innerHTML = `
   <style>
@@ -1231,13 +1204,13 @@ se.innerHTML = `
     `;
 class re extends HTMLElement {
   constructor() {
-    super(), this.attachShadow({ mode: "open" }), this.shadowRoot.append(se.content.cloneNode(!0)), this.emailEl = this.shadowRoot.querySelector("#email"), this.nameEl = this.shadowRoot.querySelector("#name"), this.phoneEl = this.shadowRoot.querySelector("#phone"), this.titleEl = this.shadowRoot.querySelector("#title"), this.firgureEl = this.shadowRoot.querySelector("figure"), this.card = this.shadowRoot.querySelector("#card");
+    super(), this.attachShadow({ mode: "open" }), this.shadowRoot.append(se.content.cloneNode(!0)), this.emailEl = this.shadowRoot.querySelector("#email_el"), this.nameEl = this.shadowRoot.querySelector("#name"), this.phoneEl = this.shadowRoot.querySelector("#phone_el"), this.titleEl = this.shadowRoot.querySelector("#title"), this.firgureEl = this.shadowRoot.querySelector("figure"), this.card = this.shadowRoot.querySelector("#card");
   }
   static get observedAttributes() {
     return ["email", "name", "phone", "jobtitle", "image", "variant"];
   }
   attributeChangedCallback(e, i, t) {
-    if (e === "email" && (this.emailEl.setAttribute("href", `mailto:${t}`), this.phoneEl.style.display = "block", this.emailEl.textContent = t), e === "name" && (this.nameEl.textContent = t), e === "phone" && (this.phoneEl.setAttribute("href", `tel:${t}`), this.phoneEl.style.display = "block", this.phoneEl.textContent = t), e === "jobtitle" && (this.titleEl.textContent = t), e === "image") {
+    if (e === "email" && (this.emailEl.setAttribute("href", `mailto:${t}`), this.phoneEl.style.display = "block", this.emailEl.textContent = t), e === "name" && (this.nameEl.textContent = t), e === "phone" && (this.phoneEl.setAttribute("href", `tel:${t}`), this.shadowRoot.querySelector("#phone").style.display = "block", this.phoneEl.textContent = t), e === "jobtitle" && (this.titleEl.textContent = t), e === "image") {
       const o = document.createElement("img");
       o.setAttribute("src", t), this.firgureEl.append(o);
     }
@@ -1458,13 +1431,13 @@ customElements.get(I) || customElements.define(I, et);
 
 /***/ }),
 
-/***/ "./src/miles-business-card/block.json":
-/*!********************************************!*\
-  !*** ./src/miles-business-card/block.json ***!
-  \********************************************/
+/***/ "./src/miles-contact-card/block.json":
+/*!*******************************************!*\
+  !*** ./src/miles-contact-card/block.json ***!
+  \*******************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"miles-blocks/miles-business-card","version":"0.1.0","title":"Miles Businesss Card Block","category":"widgets","icon":"businessperson","description":"Example block scaffolded with Create Block tool.","attributes":{"variant":{"type":"string"},"wide":{"type":"boolean"},"cvemail":{"type":"string"},"name":{"type":"string"},"email":{"type":"string"},"phone":{"type":"string"},"jobtitle":{"type":"string"},"image":{"type":"string"}},"supports":{"html":false},"textdomain":"miles-editor-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"miles-blocks/miles-contact-card","version":"0.1.0","title":"Miles Contact Card Block","category":"widgets","icon":"index-card","description":"Contact information block","supports":{"html":false},"attributes":{"name":{"type":"string"},"email":{"type":"string"},"address":{"type":"string"},"orgnr":{"type":"string"},"phone":{"type":"string"},"image":{"type":"string"}},"textdomain":"miles-contact-card","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ })
 
@@ -1578,8 +1551,8 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"miles-business-card/index": 0,
-/******/ 			"miles-business-card/style-index": 0
+/******/ 			"miles-contact-card/index": 0,
+/******/ 			"miles-contact-card/style-index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1629,7 +1602,7 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["miles-business-card/style-index"], () => (__webpack_require__("./src/miles-business-card/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["miles-contact-card/style-index"], () => (__webpack_require__("./src/miles-contact-card/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
