@@ -1,4 +1,5 @@
 <?php
+
 include_once '../../../miles-wp-theme/miles_limes.php';
 use miles_limes;
 
@@ -16,7 +17,7 @@ if ( is_email($attributes['cvemail']) ) :
 		$cv_data['title'] = $cv_data['jobtitle'];
 	endif;
 
-	$attributes = array_merge( (array) $cv_data, array_filter($attributes));
+	$attributes = array_merge(  array_filter($attributes), array_filter((array) $cv_data));
 endif;
 
 $attributestring = '';

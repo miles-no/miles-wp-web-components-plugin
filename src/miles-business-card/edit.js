@@ -15,7 +15,6 @@ import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import ServerSideRender from '@wordpress/server-side-render';
 import {Panel, PanelBody, PanelRow, TextControl, SelectControl, ToggleControl} from '@wordpress/components';
 import { useState } from '@wordpress/element';
-
 import {MilesBusinessCard} from "miles-wc/public/miles-wc.es";
 
 
@@ -26,7 +25,7 @@ import {MilesBusinessCard} from "miles-wc/public/miles-wc.es";
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import './editor.scss';
-import blockInfo from './block.json';
+import blockInfo from "./block.json";
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -87,7 +86,7 @@ export default function Edit({attributes, setAttributes	}) {
 						</PanelRow>
 					</PanelBody>
 
-					<PanelBody title='Manual data' initialOpen={false} >
+					<PanelBody title='Manual datas' initialOpen={false} >
 						<PanelRow><p>This will override data from CV-partner.</p></PanelRow>
 						<PanelRow>
 							<TextControl label="Name" onChange={changeName} value={attributes.name}/>
@@ -108,7 +107,7 @@ export default function Edit({attributes, setAttributes	}) {
 
 				</Panel>
 			</InspectorControls>
-			<ServerSideRender block={blockInfo.name} attributes={attributes} />
+			<ServerSideRender skipBlockSupportAttributes  block={blockInfo.name} attributes={attributes} />
 		</p>
 
 );

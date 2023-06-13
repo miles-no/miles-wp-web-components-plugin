@@ -6,7 +6,7 @@
 	"title": "Miles Businesss Card Block",
 	"category": "widgets",
 	"icon": "businessperson",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "Person business card block",
 	"attributes": {
 		"variant" : {
 			"type": "string"
