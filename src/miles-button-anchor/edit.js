@@ -48,10 +48,10 @@ export default function Edit({attributes, setAttributes	}) {
 				<Panel header='Button Anchor Settings'>
 					<PanelBody title='Button Anchor Settings'>
 						<PanelRow>
-							<TextControl label="href" onChange={changeHref} value={attributes.href}/>
+							<TextControl label="Link to anchor id" onChange={changeHref} value={attributes.href}/>
 						</PanelRow>
 						<PanelRow>
-							<TextControl label="Content" onChange={changeContent} value={attributes.content}/>
+							<TextControl label="Link text" onChange={changeContent} value={attributes.content}/>
 						</PanelRow>
 					</PanelBody>
 				</Panel>

@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "miles-blocks/miles-office-banner",
+	"version": "0.1.0",
+	"title": "Office Banner",
+	"category": "widgets",
+	"icon": "layout",
+	"description": "Banner block for Miles offices.",
+	"attributes": {
+		"bannerHeading": {
+			"type": "string"
+		},
+		"bannerImageId": {
+			"type": "number",
+			"default": 0
+		},
+		"mediaId": {
+			"type": "number",
+			"default": 0
+		},
+		"mediaUrl": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "miles-office-banner",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
