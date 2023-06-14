@@ -5,7 +5,7 @@
  * Requires at least: 6.1
  * Requires PHP:      8.0
  * Version:           0.1.0
- * Author:            The WordPress Contributors
+ * Author:            Miles
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       miles-editor-blocks
@@ -25,6 +25,8 @@ function create_block_miles_editor_blocks_block_init(): void
 	register_block_type( __DIR__ . '/build/miles-business-card' );
 	register_block_type( __DIR__ . '/build/miles-contact-card' );
 	register_block_type( __DIR__ . '/build/miles-button-anchor' );
-#	register_block_type( __DIR__ . '/build/miles-office-banner' );
+	register_block_type( __DIR__ . '/build/miles-office-banner' );
+	register_block_type( __DIR__ . '/build/miles-info-block' );
+
 }
 add_action( 'init', 'create_block_miles_editor_blocks_block_init' );
