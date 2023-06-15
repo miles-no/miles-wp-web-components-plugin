@@ -85,11 +85,26 @@ const BlockEdit = props => {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Button, {
         onClick: open
       }, attributes.mediaId == 0 && __('Choose a banner image', 'miles-blocks'), props.media != undefined && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ResponsiveWrapper, {
-        naturalWidth: 2000,
-        naturalHeight: 100
+        naturalWidth: props.media.media_details.width,
+        naturalHeight: props.media.media_details.height
       }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
         src: props.media.source_url
-      }), "a"), "ne");
+      })));
+    }
+  })), attributes.mediaId != 0 && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUpload, {
+    title: __('Replace image', 'miles-blocks'),
+    value: attributes.mediaId,
+    onSelect: onSelectMedia,
+    allowedTypes: ['image'],
+    render: _ref2 => {
+      let {
+        open
+      } = _ref2;
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Button, {
+        onClick: open,
+        isDefault: true,
+        isLarge: true
+      }, __('Replace image', 'miles-blocks'));
     }
   })), attributes.mediaId != 0 && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Button, {
     onClick: removeMedia,

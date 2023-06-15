@@ -8,9 +8,7 @@
  * Replace them with your own styles or remove the file completely.
  */
 .wp-block-miles-blocks-miles-office-banner {
-  background-color: #21759b;
-  color: rgba(255, 255, 255, 0.2);
-  padding: 2px;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style-index.css.map*/

@@ -1,8 +1,8 @@
 <miles-office-banner>
 
-		<?php if($attributes['bannerImageId'] != ''):?>
+		<?php if($attributes['mediaId'] != ''):?>
 			<figure slot="bannerimage">
-				<?php echo wp_get_attachment_image( $attributes['bannerImageId'], 'full' ); ?>
+				<?php echo wp_get_attachment_image( $attributes['mediaId'], 'full' ); ?>
 			</figure>
 		<?php endif;?>
 

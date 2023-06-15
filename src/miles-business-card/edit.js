@@ -87,7 +87,7 @@ export default function Edit({attributes, setAttributes	}) {
 					</PanelBody>
 
 					<PanelBody title='Manual datas' initialOpen={false} >
-						<PanelRow><p>This will override data from CV-partner.</p></PanelRow>
+						<PanelRow><p>Fallback if data is missing in CV-partner.</p></PanelRow>
 						<PanelRow>
 							<TextControl label="Name" onChange={changeName} value={attributes.name}/>
 						</PanelRow>
