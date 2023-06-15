@@ -43,7 +43,7 @@ export default function Edit({attributes, setAttributes	}) {
 	}
 
 	return (
-		<div { ...useBlockProps() }>
+		<section { ...useBlockProps() }>
 			<InspectorControls>
 				<Panel header='Button Anchor Settings'>
 					<PanelBody title='Button Anchor Settings'>
@@ -57,6 +57,6 @@ export default function Edit({attributes, setAttributes	}) {
 				</Panel>
 			</InspectorControls>
 			<ServerSideRender skipBlockSupportAttributes block={blockInfo.name} attributes={attributes}/>
-		</div>
+		</section>
 	);
 }

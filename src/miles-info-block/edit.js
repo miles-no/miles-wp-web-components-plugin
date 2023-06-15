@@ -12,8 +12,10 @@ import { __ } from '@wordpress/i18n';
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
 import { useBlockProps } from '@wordpress/block-editor';
-import {Panel, PanelBody, PanelRow, TextControl, SelectControl} from '@wordpress/components';
+import {Panel, PanelBody, PanelRow, TextControl,TextareaControl, SelectControl} from '@wordpress/components';
 import ServerSideRender from '@wordpress/server-side-render';
+import {MilesInfoBlock} from "miles-wc/public/miles-wc.es";
+
 
 
 /**
@@ -61,7 +63,7 @@ export default function Edit({attributes, setAttributes	}) {
 							<TextControl label="Heading" onChange={changeHeading} value={attributes.heading}/>
 						</PanelRow>
 						<PanelRow>
-							<TextControl label="text" onChange={changeText} value={attributes.text}/>
+							<TextareaControl label="text" onChange={changeText} value={attributes.text}/>
 						</PanelRow>
 					</PanelBody>
 
