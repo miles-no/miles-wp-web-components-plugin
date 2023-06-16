@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/miles-office-banner/edit2.js":
-/*!******************************************!*\
-  !*** ./src/miles-office-banner/edit2.js ***!
-  \******************************************/
+/***/ "./src/miles-office-banner/edit.js":
+/*!*****************************************!*\
+  !*** ./src/miles-office-banner/edit.js ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -43,7 +43,6 @@ const {
   __
 } = wp.i18n;
 const BlockEdit = props => {
-  console.log(props.media);
   const {
     attributes,
     setAttributes
@@ -72,7 +71,7 @@ const BlockEdit = props => {
     label: "Banner heading",
     onChange: changeHeading,
     value: attributes.bannerHeading
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelRow, {
     className: "editor-post-featured-image"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUpload, {
     onSelect: onSelectMedia,
@@ -84,14 +83,11 @@ const BlockEdit = props => {
       } = _ref;
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Button, {
         onClick: open
-      }, attributes.mediaId == 0 && __('Choose a banner image', 'miles-blocks'), props.media != undefined && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ResponsiveWrapper, {
-        naturalWidth: props.media.media_details.width,
-        naturalHeight: props.media.media_details.height
-      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: props.media.source_url
-      })));
+      }, attributes.mediaId == 0 && __('Choose a banner image', 'miles-blocks'), props.media != undefined && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+        src: props.media.media_details.sizes.thumbnail.source_url
+      }));
     }
-  })), attributes.mediaId != 0 && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUpload, {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null)), attributes.mediaId != 0 && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUpload, {
     title: __('Replace image', 'miles-blocks'),
     value: attributes.mediaId,
     onSelect: onSelectMedia,
@@ -110,7 +106,7 @@ const BlockEdit = props => {
     onClick: removeMedia,
     isLink: true,
     isDestructive: true
-  }, __('Remove banner image', 'miles-blocks'))))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, __('Remove banner image', 'miles-blocks')))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "wp-block-miles-blocks-miles-office-banner"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(InnerBlocks, useBlockProps(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", useInnerBlocksProps()))));
 };
@@ -136,7 +132,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.scss */ "./src/miles-office-banner/style.scss");
-/* harmony import */ var _edit2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./edit2 */ "./src/miles-office-banner/edit2.js");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./edit */ "./src/miles-office-banner/edit.js");
 /* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./block.json */ "./src/miles-office-banner/block.json");
 
 /**
@@ -171,7 +167,7 @@ __webpack_require__.r(__webpack_exports__);
   /**
    * @see ./edit.js
    */
-  edit: _edit2__WEBPACK_IMPORTED_MODULE_4__["default"],
+  edit: _edit__WEBPACK_IMPORTED_MODULE_4__["default"],
   save() {
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null);
   }
