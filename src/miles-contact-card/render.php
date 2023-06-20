@@ -9,4 +9,4 @@ foreach ($attributes as $key=>$value){
 }
 
 
-echo '<miles-contact-card ' . $attributestring . '></miles-contact-card>';
+echo '<miles-contact-card slot="office"' . $attributestring . '></miles-contact-card>';

@@ -1,19 +1,21 @@
-<miles-office-banner>
+<?php
 
-		<?php if($attributes['mediaId'] != ''):?>
-			<figure slot="bannerimage">
-				<?php echo wp_get_attachment_image( $attributes['mediaId'], 'full' ); ?>
-			</figure>
-		<?php endif;?>
+$attributestring = '';
 
 
-		<?php if($attributes['bannerHeading'] != ''):?>
-			<h2 slot="bannerheading"><?php  echo $attributes['bannerHeading'] ?></h2>
-		<?php endif;?>
+foreach ($attributes as $key=>$value){
+	if ($key == 'mediaId') {
+		$attributestring .=  'background="' . wp_get_attachment_image_url($value, 'full') .'" ';
+		continue;
+	}
+	if ($key == 'bannerHeading') {
+		$attributestring .=  'city="' . $value .'" ';
+		continue;
+	}
+}
 
+?>
 
-		<div class="miles-office-menu">
-			<?php echo $content;?>
-		</div>
-
+<miles-office-banner <?php echo $attributestring ?>>
+		<?php echo $content;?>
 </miles-office-banner>
