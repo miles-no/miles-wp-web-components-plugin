@@ -4,6 +4,8 @@ const { Fragment } = wp.element;
 const { compose } = wp.compose;
 const { withSelect } = wp.data;
 const { __ } = wp.i18n;
+import {MilesOfficeBanner} from "miles-wc/public/miles-wc.es"
+
 
 const BlockEdit = (props) => {
 	const { attributes, setAttributes } = props;

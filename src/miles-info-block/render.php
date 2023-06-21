@@ -13,4 +13,4 @@ foreach ($attributes as $key=>$value){
 }
 
 
-echo '<miles-info-block ' . $attributestring . '>'.$text.'</miles-info-block>';
+echo '<miles-info-block ' . $attributestring . '>'.$text.$content.'</miles-info-block>';

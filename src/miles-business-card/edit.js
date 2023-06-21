@@ -68,7 +68,7 @@ export default function Edit({attributes, setAttributes	}) {
 		setAttributes({image: changedImageUrl});
 	}
 	return (
-		<p { ...useBlockProps() }>
+		<section { ...useBlockProps() }>
 			<InspectorControls>
 				<Panel header='Business Card Settings'>
 					<PanelBody title='Basics' initialOpen={ true }>
@@ -108,7 +108,7 @@ export default function Edit({attributes, setAttributes	}) {
 				</Panel>
 			</InspectorControls>
 			<ServerSideRender skipBlockSupportAttributes  block={blockInfo.name} attributes={attributes} />
-		</p>
+		</section>
 
 );
 }

@@ -11,9 +11,11 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps } from '@wordpress/block-editor';
+
+import { InnerBlocks, useBlockProps,useInnerBlocksProps } from '@wordpress/block-editor';
 import {Panel, PanelBody, PanelRow, TextControl,TextareaControl, SelectControl} from '@wordpress/components';
 import ServerSideRender from '@wordpress/server-side-render';
+import { useState } from '@wordpress/element';
 import {MilesInfoBlock} from "miles-wc/public/miles-wc.es";
 
 
@@ -50,7 +52,7 @@ export default function Edit({attributes, setAttributes	}) {
 	}
 
 	return (
-		<p { ...useBlockProps() }>
+		<section { ...useBlockProps() }>
 			<InspectorControls>
 				<Panel header='Info block settings'>
 
@@ -69,7 +71,13 @@ export default function Edit({attributes, setAttributes	}) {
 
 				</Panel>
 			</InspectorControls>
+			<div className="wp-block-miles-blocks-miles-info-block">
+				<InnerBlocks {...useBlockProps()}>
+
+					<div {...useInnerBlocksProps()} />
+				</InnerBlocks>
+			</div>
 			<ServerSideRender skipBlockSupportAttributes  block={blockInfo.name} attributes={attributes} />
-		</p>
+		</section>
 	);
 }

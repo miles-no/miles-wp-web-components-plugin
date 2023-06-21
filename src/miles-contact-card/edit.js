@@ -52,7 +52,7 @@ export default function Edit({attributes, setAttributes	}) {
 	}
 
 	return (
-		<p { ...useBlockProps() }>
+		<section { ...useBlockProps() }>
 			<InspectorControls>
 				<Panel header={ __( 'Contact Card Settings', 'miles-contact-card' ) }>
 					<PanelBody title={ __( 'Contact Card Settings', 'miles-contact-card' ) }>
@@ -75,6 +75,6 @@ export default function Edit({attributes, setAttributes	}) {
 				</Panel>
 			</InspectorControls>
 			<ServerSideRender skipBlockSupportAttributes block={blockInfo.name} attributes={attributes} />
-		</p>
+		</section>
 	);
 }
