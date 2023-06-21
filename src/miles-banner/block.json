@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "miles-blocks/miles-banner",
+	"version": "0.1.0",
+	"title": "Miles Banner",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Banner component with text and image",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"variant" : {
+			"type": "string",
+			"default": ""
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"slogan": {
+			"type": "string",
+			"default": ""
+		},
+		"mediaId": {
+			"type": "number",
+			"default": 0
+		},
+		"mediaUrl": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "miles-banner",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
