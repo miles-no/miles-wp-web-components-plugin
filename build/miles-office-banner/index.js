@@ -221,45 +221,46 @@ module.exports = window["wp"]["element"];
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   MilesArrow: () => (/* binding */ oe),
-/* harmony export */   MilesArrowNav: () => (/* binding */ zt),
-/* harmony export */   MilesAudioPlayer: () => (/* binding */ fe),
-/* harmony export */   MilesAudioSeek: () => (/* binding */ Zt),
-/* harmony export */   MilesAuthorCard: () => (/* binding */ ae),
-/* harmony export */   MilesBanner: () => (/* binding */ ve),
-/* harmony export */   MilesBlogCard: () => (/* binding */ Wt),
-/* harmony export */   MilesBulb: () => (/* binding */ Ht),
-/* harmony export */   MilesBusinessCard: () => (/* binding */ gt),
-/* harmony export */   MilesButtonAnchor: () => (/* binding */ Bt),
-/* harmony export */   MilesCloud: () => (/* binding */ kt),
-/* harmony export */   MilesContactCard: () => (/* binding */ ce),
-/* harmony export */   MilesCup: () => (/* binding */ St),
-/* harmony export */   MilesCurve: () => (/* binding */ Lt),
-/* harmony export */   MilesEmail: () => (/* binding */ Pt),
-/* harmony export */   MilesFagbloggTeaser: () => (/* binding */ Gt),
-/* harmony export */   MilesImageSlider: () => (/* binding */ Kt),
-/* harmony export */   MilesInfo: () => (/* binding */ jt),
-/* harmony export */   MilesInfoBlock: () => (/* binding */ ne),
-/* harmony export */   MilesLogo: () => (/* binding */ Rt),
-/* harmony export */   MilesOfficeBanner: () => (/* binding */ se),
-/* harmony export */   MilesOverlapBlock: () => (/* binding */ te),
-/* harmony export */   MilesPause: () => (/* binding */ Nt),
-/* harmony export */   MilesPhone: () => (/* binding */ qt),
-/* harmony export */   MilesPlay: () => (/* binding */ $t),
-/* harmony export */   MilesPodcastCard: () => (/* binding */ pe),
-/* harmony export */   MilesPodcastTeaser: () => (/* binding */ Ot),
-/* harmony export */   MilesPodd: () => (/* binding */ Tt),
-/* harmony export */   MilesProfileCard: () => (/* binding */ It),
-/* harmony export */   MilesZoom: () => (/* binding */ At),
-/* harmony export */   SiteMenu: () => (/* binding */ me)
+/* harmony export */   MilesArrow: () => (/* binding */ st),
+/* harmony export */   MilesArrowNav: () => (/* binding */ Qe),
+/* harmony export */   MilesAudioPlayer: () => (/* binding */ vt),
+/* harmony export */   MilesAudioSeek: () => (/* binding */ ze),
+/* harmony export */   MilesAuthorCard: () => (/* binding */ at),
+/* harmony export */   MilesBanner: () => (/* binding */ ft),
+/* harmony export */   MilesBlogCard: () => (/* binding */ Ge),
+/* harmony export */   MilesBulb: () => (/* binding */ Le),
+/* harmony export */   MilesBusinessCard: () => (/* binding */ ue),
+/* harmony export */   MilesButtonAnchor: () => (/* binding */ Ze),
+/* harmony export */   MilesCloud: () => (/* binding */ ke),
+/* harmony export */   MilesContactCard: () => (/* binding */ ct),
+/* harmony export */   MilesCup: () => (/* binding */ He),
+/* harmony export */   MilesCurve: () => (/* binding */ Me),
+/* harmony export */   MilesEmail: () => (/* binding */ qe),
+/* harmony export */   MilesFagbloggTeaser: () => (/* binding */ We),
+/* harmony export */   MilesImageSlider: () => (/* binding */ Ke),
+/* harmony export */   MilesInfo: () => (/* binding */ Ie),
+/* harmony export */   MilesInfoBlock: () => (/* binding */ lt),
+/* harmony export */   MilesLogo: () => (/* binding */ Re),
+/* harmony export */   MilesOfficeBanner: () => (/* binding */ it),
+/* harmony export */   MilesOverlapBlock: () => (/* binding */ et),
+/* harmony export */   MilesPause: () => (/* binding */ $e),
+/* harmony export */   MilesPhone: () => (/* binding */ Te),
+/* harmony export */   MilesPlay: () => (/* binding */ Pe),
+/* harmony export */   MilesPodcastCard: () => (/* binding */ gt),
+/* harmony export */   MilesPodcastTeaser: () => (/* binding */ Oe),
+/* harmony export */   MilesPodd: () => (/* binding */ Ae),
+/* harmony export */   MilesProfileCard: () => (/* binding */ Ve),
+/* harmony export */   MilesZoom: () => (/* binding */ Se),
+/* harmony export */   SiteMenu: () => (/* binding */ mt)
 /* harmony export */ });
-var wt = Object.defineProperty;
-var Mt = (o, t, s) => t in o ? wt(o, t, { enumerable: !0, configurable: !0, writable: !0, value: s }) : o[t] = s;
-var a = (o, t, s) => (Mt(o, typeof t != "symbol" ? t + "" : t, s), s);
-const l = "", U = document.createElement("template");
+var Ce = Object.defineProperty;
+var Ee = (s, e, i) => e in s ? Ce(s, e, { enumerable: !0, configurable: !0, writable: !0, value: i }) : s[e] = i;
+var a = (s, e, i) => (Ee(s, typeof e != "symbol" ? e + "" : e, i), i);
+const r = `@charset "UTF-8";@import"https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap";:host{--miles_primary_dark: #b72318;--miles_primary_light: #fbf0e5;--miles_secondary_one: #004047;--miles_secondary_two: #78e8db;--miles_secondary_three: #000000;--miles_secondary_four: #450d21;--miles_secondary_five: #ff303b;--miles_link_color: #183f46;--miles_link_color_hover: #94e5db;--miles_link_color_ondark: #94e5db;--miles_link_color_ondark_hover: #183f46;--miles_default_bg: #f5f5f5;--miles_effect_shadow_low: 0 0 4px 0 #00000033;--miles_effect_shadow_high: 0 0 16px 0 #00000033;--content_width_max: 1440px;--content_width: clamp(320px, 80vw, var(--content_width_max));--default_padding: 1rem .625rem;--default_padding_large: 2rem 1.25rem;--vertical_spacing: 4rem;--vertical_spacing_large: 8rem;--header-height: 72px;--miles-h1: 2.5rem;--miles-h2: 3rem;--miles-h3: 1.25rem;--miles-line-height: 150%;--miles-h1-lineheight: calc(var(--miles-h1) * 1.5);--miles-h2-lineheight: calc(var(--miles-h2) * 1.5);--miles-h3-lineheight: calc(var(--miles-h3) * 1.5);--halve_margin_offset: calc(calc(100vw - var(--content_width)) / 2);--halve_margin_offset_large: calc(100vw - var(--content_width))}
+`, U = document.createElement("template");
 U.innerHTML = `
   <style>
-    ${l}
+    ${r}
 
 
     :host {
@@ -290,25 +291,25 @@ U.innerHTML = `
     </svg>
   </div>  
   `;
-class kt extends HTMLElement {
+class ke extends HTMLElement {
   constructor() {
     super();
-    const t = this.attachShadow({ mode: "open" });
-    t.appendChild(U.content.cloneNode(!0)), this.svg = t.querySelector("svg");
+    const e = this.attachShadow({ mode: "open" });
+    e.appendChild(U.content.cloneNode(!0)), this.svg = e.querySelector("svg");
   }
   static get observedAttributes() {
     return ["width", "height", "color"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "width" && this.svg.setAttribute("width", e), t === "height" && this.svg.setAttribute("height", e), t === "color" && this.svg.setAttribute("fill", e);
+  attributeChangedCallback(e, i, t) {
+    e === "width" && this.svg.setAttribute("width", t), e === "height" && this.svg.setAttribute("height", t), e === "color" && this.svg.setAttribute("fill", t);
   }
 }
-const p = "miles-cloud";
-customElements.get(p) || customElements.define(p, kt);
+const g = "miles-cloud";
+customElements.get(g) || customElements.define(g, ke);
 const K = document.createElement("template");
 K.innerHTML = ` 
   <style>
-    ${l}
+    ${r}
 
     :host {
       display: inline-block;
@@ -326,25 +327,25 @@ K.innerHTML = `
     </svg>
   </div>
     `;
-class xt extends HTMLElement {
+class _e extends HTMLElement {
   constructor() {
     super();
-    const t = this.attachShadow({ mode: "open" });
-    t.appendChild(K.content.cloneNode(!0)), this.svg = t.querySelector("svg");
+    const e = this.attachShadow({ mode: "open" });
+    e.appendChild(K.content.cloneNode(!0)), this.svg = e.querySelector("svg");
   }
   static get observedAttributes() {
     return ["width", "height", "color"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "width" && this.svg.setAttribute("width", e), t === "height" && this.svg.setAttribute("height", e), t === "color" && this.svg.setAttribute("fill", e);
+  attributeChangedCallback(e, i, t) {
+    e === "width" && this.svg.setAttribute("width", t), e === "height" && this.svg.setAttribute("height", t), e === "color" && this.svg.setAttribute("fill", t);
   }
 }
-const g = "miles-heart";
-customElements.get(g) || customElements.define(g, xt);
-const X = document.createElement("template");
-X.innerHTML = `
+const u = "miles-heart";
+customElements.get(u) || customElements.define(u, _e);
+const Y = document.createElement("template");
+Y.innerHTML = `
     <style>
-      ${l}
+      ${r}
 
         :host {
           display: inline-block;
@@ -363,25 +364,25 @@ X.innerHTML = `
           </svg>
     </div>
       `;
-class Lt extends HTMLElement {
+class Me extends HTMLElement {
   constructor() {
     super();
-    const t = this.attachShadow({ mode: "open" });
-    t.appendChild(X.content.cloneNode(!0)), this.svg = t.querySelector("svg");
+    const e = this.attachShadow({ mode: "open" });
+    e.appendChild(Y.content.cloneNode(!0)), this.svg = e.querySelector("svg");
   }
   static get observedAttributes() {
     return ["width", "height", "color"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "width" && this.svg.setAttribute("width", e), t === "height" && this.svg.setAttribute("height", e), t === "color" && this.svg.setAttribute("fill", e);
+  attributeChangedCallback(e, i, t) {
+    e === "width" && this.svg.setAttribute("width", t), e === "height" && this.svg.setAttribute("height", t), e === "color" && this.svg.setAttribute("fill", t);
   }
 }
-const v = "miles-curve";
-customElements.get(v) || customElements.define(v, Lt);
-const G = document.createElement("template");
-G.innerHTML = `
+const f = "miles-curve";
+customElements.get(f) || customElements.define(f, Me);
+const W = document.createElement("template");
+W.innerHTML = `
     <style>
-        ${l}
+        ${r}
 
     </style>
     <div class="bulb">
@@ -408,25 +409,25 @@ G.innerHTML = `
         </svg>
     </div>  
     `;
-class Ht extends HTMLElement {
+class Le extends HTMLElement {
   constructor() {
     super();
-    const t = this.attachShadow({ mode: "open" });
-    t.appendChild(G.content.cloneNode(!0)), this.svg = t.querySelector("svg");
+    const e = this.attachShadow({ mode: "open" });
+    e.appendChild(W.content.cloneNode(!0)), this.svg = e.querySelector("svg");
   }
   static get observedAttributes() {
     return ["width", "height", "color"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "width" && this.svg.setAttribute("width", e), t === "height" && this.svg.setAttribute("height", e), t === "color" && this.svg.setAttribute("fill", e);
+  attributeChangedCallback(e, i, t) {
+    e === "width" && this.svg.setAttribute("width", t), e === "height" && this.svg.setAttribute("height", t), e === "color" && this.svg.setAttribute("fill", t);
   }
 }
-const C = "miles-bulb";
-customElements.get(C) || customElements.define(C, Ht);
-const J = document.createElement("template");
-J.innerHTML = `
+const b = "miles-bulb";
+customElements.get(b) || customElements.define(b, Le);
+const X = document.createElement("template");
+X.innerHTML = `
     <style>
-      ${l}
+      ${r}
 
       :host {
         display: inline-block;
@@ -453,28 +454,28 @@ J.innerHTML = `
           </svg>
     </div>
       `;
-class St extends HTMLElement {
+class He extends HTMLElement {
   constructor() {
     super();
-    const t = this.attachShadow({ mode: "open" });
-    t.appendChild(J.content.cloneNode(!0)), this.svg = t.querySelector("svg");
+    const e = this.attachShadow({ mode: "open" });
+    e.appendChild(X.content.cloneNode(!0)), this.svg = e.querySelector("svg");
   }
   static get observedAttributes() {
     return ["width", "height", "color"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "width" && this.svg.setAttribute("width", e), t === "height" && this.svg.setAttribute("height", e), t === "color" && this.svg.setAttribute("fill", e);
+  attributeChangedCallback(e, i, t) {
+    e === "width" && this.svg.setAttribute("width", t), e === "height" && this.svg.setAttribute("height", t), e === "color" && this.svg.setAttribute("fill", t);
   }
 }
-const f = "miles-cup";
-customElements.get(f) || customElements.define(f, St);
-class At extends HTMLElement {
+const v = "miles-cup";
+customElements.get(v) || customElements.define(v, He);
+class Se extends HTMLElement {
   constructor() {
     super();
-    const t = this.attachShadow({ mode: "open" });
-    t.innerHTML = `
+    const e = this.attachShadow({ mode: "open" });
+    e.innerHTML = `
         <style>
-          ${l}
+          ${r}
 
           :host {
             display: inline-block;
@@ -490,12 +491,12 @@ class At extends HTMLElement {
       `;
   }
 }
-const b = "miles-zoom";
-customElements.get(b) || customElements.define(b, At);
-const W = document.createElement("template");
-W.innerHTML = `
+const w = "miles-zoom";
+customElements.get(w) || customElements.define(w, Se);
+const G = document.createElement("template");
+G.innerHTML = `
           <style>
-            ${l}
+            ${r}
 
             :host {
               display: inline-block;
@@ -520,23 +521,23 @@ W.innerHTML = `
           </svg>
           </div>
         `;
-class Tt extends HTMLElement {
+class Ae extends HTMLElement {
   constructor() {
     super();
-    const t = this.attachShadow({ mode: "open" });
-    t.appendChild(W.content.cloneNode(!0)), this.svgEl = t.querySelector("path");
+    const e = this.attachShadow({ mode: "open" });
+    e.appendChild(G.content.cloneNode(!0)), this.svgEl = e.querySelector("path");
   }
   static get observedAttributes() {
     return ["color"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "color" && (e && e.length > 0 ? (this.svgEl.setAttribute("fill", e), this.svgEl.style.transform = "scale(1.03)") : (this.svgEl.setAttribute("fill", "currentColor"), this.svgEl.style.transform = "scale(1)"));
+  attributeChangedCallback(e, i, t) {
+    e === "color" && (t && t.length > 0 ? (this.svgEl.setAttribute("fill", t), this.svgEl.style.transform = "scale(1.03)") : (this.svgEl.setAttribute("fill", "currentColor"), this.svgEl.style.transform = "scale(1)"));
   }
 }
-const E = "miles-pod";
-customElements.get(E) || customElements.define(E, Tt);
-const Y = document.createElement("template");
-Y.innerHTML = `
+const y = "miles-pod";
+customElements.get(y) || customElements.define(y, Ae);
+const J = document.createElement("template");
+J.innerHTML = `
       <style> 
         :host {
           display: flex;
@@ -548,23 +549,23 @@ Y.innerHTML = `
         <path d="M1.5 22C1.1 22 0.75 21.85 0.45 21.55C0.15 21.25 0 20.9 0 20.5V1.5C0 1.1 0.15 0.75 0.45 0.45C0.75 0.15 1.1 0 1.5 0H12.5C12.9 0 13.25 0.15 13.55 0.45C13.85 0.75 14 1.1 14 1.5V20.5C14 20.9 13.85 21.25 13.55 21.55C13.25 21.85 12.9 22 12.5 22H1.5ZM1.5 19.75V20.5H12.5V19.75H1.5ZM1.5 18.25H12.5V3.75H1.5V18.25ZM1.5 2.25H12.5V1.5H1.5V2.25Z" fill="currentColor"/>
       </svg>
 `;
-class qt extends HTMLElement {
+class Te extends HTMLElement {
   constructor() {
     super();
-    const t = this.attachShadow({ mode: "open" });
-    t.appendChild(Y.content.cloneNode(!0)), this.svgEl = t.querySelector("path");
+    const e = this.attachShadow({ mode: "open" });
+    e.appendChild(J.content.cloneNode(!0)), this.svgEl = e.querySelector("path");
   }
   static get observedAttributes() {
     return ["color"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "color" && (e && e.length > 0 ? this.svgEl.setAttribute("fill", e) : this.svgEl.setAttribute("fill", "currentColor"));
+  attributeChangedCallback(e, i, t) {
+    e === "color" && (t && t.length > 0 ? this.svgEl.setAttribute("fill", t) : this.svgEl.setAttribute("fill", "currentColor"));
   }
 }
-const y = "miles-phone";
-customElements.get(y) || customElements.define(y, qt);
-const tt = document.createElement("template");
-tt.innerHTML = `
+const x = "miles-phone";
+customElements.get(x) || customElements.define(x, Te);
+const ee = document.createElement("template");
+ee.innerHTML = `
       <style>
         :host {
           display: flex;
@@ -577,59 +578,59 @@ tt.innerHTML = `
 </svg>
 
 `;
-class Pt extends HTMLElement {
+class qe extends HTMLElement {
   constructor() {
     super();
-    const t = this.attachShadow({ mode: "open" });
-    t.appendChild(tt.content.cloneNode(!0)), this.svgEl = t.querySelector("path");
+    const e = this.attachShadow({ mode: "open" });
+    e.appendChild(ee.content.cloneNode(!0)), this.svgEl = e.querySelector("path");
   }
   static get observedAttributes() {
     return ["color"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "color" && (e && e.length > 0 ? this.svgEl.setAttribute("fill", e) : this.svgEl.setAttribute("fill", "currentColor"));
+  attributeChangedCallback(e, i, t) {
+    e === "color" && (t && t.length > 0 ? this.svgEl.setAttribute("fill", t) : this.svgEl.setAttribute("fill", "currentColor"));
   }
 }
-const w = "miles-email";
-customElements.get(w) || customElements.define(w, Pt);
-const et = document.createElement("template");
-et.innerHTML = `
+const C = "miles-email";
+customElements.get(C) || customElements.define(C, qe);
+const te = document.createElement("template");
+te.innerHTML = `
       <style></style>
       <svg xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 -960 960 960" width="64">
         <path fill="#EB4645" d="m418-332 202-129q11-7 11-19t-11-19L418-628q-11-8-23-1.5T383-609v258q0 14 12 20.5t23-1.5Zm62 252q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z"/>
       </svg>
 
   `;
-class $t extends HTMLElement {
+class Pe extends HTMLElement {
   constructor() {
-    super(), this.attachShadow({ mode: "open" }).appendChild(et.content.cloneNode(!0));
+    super(), this.attachShadow({ mode: "open" }).appendChild(te.content.cloneNode(!0));
   }
 }
-const M = "miles-play";
-customElements.get(M) || customElements.define(M, $t);
-const st = document.createElement("template");
-st.innerHTML = `
+const E = "miles-play";
+customElements.get(E) || customElements.define(E, Pe);
+const ie = document.createElement("template");
+ie.innerHTML = `
       <style></style>
 <svg xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 -960 960 960" width="64">
   <path fill="#EB4645" d="M400.175-320q12.825 0 21.325-8.625T430-350v-260q0-12.75-8.675-21.375-8.676-8.625-21.5-8.625-12.825 0-21.325 8.625T370-610v260q0 12.75 8.675 21.375 8.676 8.625 21.5 8.625Zm160 0q12.825 0 21.325-8.625T590-350v-260q0-12.75-8.675-21.375-8.676-8.625-21.5-8.625-12.825 0-21.325 8.625T530-610v260q0 12.75 8.675 21.375 8.676 8.625 21.5 8.625ZM480.266-80q-82.734 0-155.5-31.5t-127.266-86q-54.5-54.5-86-127.341Q80-397.681 80-480.5q0-82.819 31.5-155.659Q143-709 197.5-763t127.341-85.5Q397.681-880 480.5-880q82.819 0 155.659 31.5Q709-817 763-763t85.5 127Q880-563 880-480.266q0 82.734-31.5 155.5T763-197.684q-54 54.316-127 86Q563-80 480.266-80Zm.234-60Q622-140 721-239.5t99-241Q820-622 721.188-721 622.375-820 480-820q-141 0-240.5 98.812Q140-622.375 140-480q0 141 99.5 240.5t241 99.5Zm-.5-340Z"/>
 </svg>   
   `;
-class Nt extends HTMLElement {
+class $e extends HTMLElement {
   constructor() {
-    super(), this.attachShadow({ mode: "open" }).appendChild(st.content.cloneNode(!0));
+    super(), this.attachShadow({ mode: "open" }).appendChild(ie.content.cloneNode(!0));
   }
 }
 const k = "miles-pause";
-customElements.get(k) || customElements.define(k, Nt);
-class Zt extends HTMLElement {
+customElements.get(k) || customElements.define(k, $e);
+class ze extends HTMLElement {
   constructor() {
     super(), this.shadow = this.attachShadow({ mode: "open" });
   }
   static get observedAttributes() {
     return ["direction"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "direction" && (e === "forward" ? this.shadow.innerHTML = `
+  attributeChangedCallback(e, i, t) {
+    e === "direction" && (t === "forward" ? this.shadow.innerHTML = `
           <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_908_340)">
             <path d="M16.6728 32C20.8803 32 24.4877 30.5852 27.4952 27.7556C30.5027 24.9259 32.1694 21.437 32.4953 17.2889C32.525 16.9333 32.4138 16.6222 32.162 16.3556C31.9101 16.0889 31.5916 15.9556 31.2064 15.9556C30.8508 15.9556 30.5471 16.0815 30.2953 16.3333C30.0434 16.5852 29.8879 16.9037 29.8286 17.2889C29.5027 20.6963 28.0952 23.5556 25.6063 25.8667C23.1173 28.1778 20.1395 29.3333 16.6728 29.3333C12.9097 29.3333 9.72445 28.0148 7.11699 25.3778C4.50952 22.7407 3.20579 19.5407 3.20579 15.7778C3.20579 12.1037 4.52434 9 7.16143 6.46667C9.79853 3.93333 12.969 2.66667 16.6728 2.66667C18.6876 2.66667 20.5765 3.12593 22.3395 4.04444C24.1025 4.96296 25.6359 6.17778 26.9396 7.68889L23.6062 7.68889C23.221 7.68889 22.9025 7.81481 22.6507 8.06667C22.3988 8.31852 22.2729 8.63704 22.2729 9.02222C22.2729 9.40741 22.3988 9.72593 22.6507 9.97778C22.9025 10.2296 23.221 10.3556 23.6062 10.3556H30.2286C30.6138 10.3556 30.9323 10.2296 31.1842 9.97778C31.436 9.72593 31.562 9.40741 31.562 9.02222V2.44444C31.562 2.05926 31.436 1.74074 31.1842 1.48889C30.9323 1.23704 30.6138 1.11111 30.2286 1.11111C29.8434 1.11111 29.5249 1.23704 29.273 1.48889C29.0212 1.74074 28.8952 2.05926 28.8952 2.44444V5.82222C27.3545 4.01481 25.5248 2.59259 23.4062 1.55556C21.2877 0.518519 19.0432 0 16.6728 0C14.4505 0 12.3615 0.414815 10.4059 1.24444C8.45035 2.07407 6.7392 3.20741 5.2725 4.64444C3.8058 6.08148 2.65022 7.76296 1.80576 9.68889C0.961298 11.6148 0.539062 13.6889 0.539062 15.9111C0.539062 18.1333 0.961298 20.2222 1.80576 22.1778C2.65022 24.1333 3.8058 25.837 5.2725 27.2889C6.7392 28.7407 8.45035 29.8889 10.4059 30.7333C12.3615 31.5778 14.4505 32 16.6728 32Z" fill="#EB4645"/>
@@ -658,14 +659,15 @@ class Zt extends HTMLElement {
 `);
   }
 }
-const x = "miles-seek";
-customElements.get(x) || customElements.define(x, Zt);
-const _t = "", it = document.createElement("template");
-it.innerHTML = `
+const _ = "miles-seek";
+customElements.get(_) || customElements.define(_, ze);
+const Ne = `:host{display:inline-block;width:inherit;box-sizing:border-box}
+`, oe = document.createElement("template");
+oe.innerHTML = `
 <style>
-  	${_t}
+  	${Ne}
 
-  ${l}
+  ${r}
 </style>
   <div class="logo">
     <svg version="1.1" fill="#b8261c" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 96 32" xml:space="preserve" class="miles-logo">
@@ -686,25 +688,25 @@ it.innerHTML = `
   </svg>
   </div>
 `;
-class Rt extends HTMLElement {
+class Re extends HTMLElement {
   constructor() {
     super();
-    const t = this.attachShadow({ mode: "open" });
-    t.appendChild(it.content.cloneNode(!0)), this.svg = t.querySelector("svg");
+    const e = this.attachShadow({ mode: "open" });
+    e.appendChild(oe.content.cloneNode(!0)), this.svg = e.querySelector("svg");
   }
   static get observedAttributes() {
     return ["width", "height", "color"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "width" && this.svg.setAttribute("width", e), t === "height" && this.svg.setAttribute("height", e), t === "color" && this.svg.setAttribute("fill", e);
+  attributeChangedCallback(e, i, t) {
+    e === "width" && this.svg.setAttribute("width", t), e === "height" && this.svg.setAttribute("height", t), e === "color" && this.svg.setAttribute("fill", t);
   }
 }
-const L = "miles-logo";
-customElements.get(L) || customElements.define(L, Rt);
-const H = (o) => [null, "false"].includes(o) === !1, ot = document.createElement("template");
-ot.innerHTML = `
+const M = "miles-logo";
+customElements.get(M) || customElements.define(M, Re);
+const L = (s) => [null, "false"].includes(s) === !1, se = document.createElement("template");
+se.innerHTML = `
         <style>
-          ${l}
+          ${r}
 
           :host {
             display: inline-block;
@@ -731,35 +733,36 @@ ot.innerHTML = `
           <slot></slot>
         </a>
       `;
-class Bt extends HTMLElement {
+class Ze extends HTMLElement {
   constructor() {
     super();
-    const t = this.attachShadow({ mode: "open" });
-    t.append(ot.content.cloneNode(!0)), this.buttontarget = t.querySelector("#buttonTarget");
+    const e = this.attachShadow({ mode: "open" });
+    e.append(se.content.cloneNode(!0)), this.buttontarget = e.querySelector("#buttonTarget");
   }
   static get observedAttributes() {
     return ["href", "color", "selected"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "href" && this.buttontarget.setAttribute("href", e), t === "color" && this.style.setProperty("--color", e), t === "selected" && (this.buttontarget.setAttribute(
+  attributeChangedCallback(e, i, t) {
+    e === "href" && this.buttontarget.setAttribute("href", t), e === "color" && this.style.setProperty("--color", t), e === "selected" && (this.buttontarget.setAttribute(
       "aria-selected",
-      H(e)
+      L(t)
     ), this.buttontarget.classList.toggle(
       "selected",
-      H(e)
+      L(t)
     ));
   }
   connectedCallback() {
   }
 }
-const S = "miles-button-anchor";
-customElements.get(S) || customElements.define(S, Bt);
-const Vt = "", lt = document.createElement("template");
-lt.innerHTML = `
+const H = "miles-button-anchor";
+customElements.get(H) || customElements.define(H, Ze);
+const Be = `:host{display:inline-block;--width: 215px}.profile-card{display:flex;flex-direction:column;width:var(--width);border-radius:5px;overflow:hidden}figure{border-radius:.5rem;height:var(--width);margin:0 0 .5rem;padding:0}img{background-color:#fff;filter:grayscale(1);width:100%;object-fit:cover;aspect-ratio:1 / 1;animation:fadeIn 1s cubic-bezier(.46,.03,.05,.99)}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.profile-card__info{display:flex;background-color:var(--miles_secondary_four);padding:1.2rem;min-height:140px;flex-direction:column}.jobtitle{flex-grow:1}.jobtitle p{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical}.description{display:flex;flex-direction:row;align-items:baseline;gap:.2rem}h3,p{margin:0;color:var(--miles_primary_light)}
+`, re = document.createElement("template");
+re.innerHTML = `
         <style>
-          	${Vt}
+          	${Be}
 
-           ${l}
+           ${r}
         </style>
        
         <div class="profile-card">
@@ -782,31 +785,32 @@ lt.innerHTML = `
           </div>
         </div>  
       `;
-class It extends HTMLElement {
+class Ve extends HTMLElement {
   constructor() {
-    super(), this.attachShadow({ mode: "open" }).append(lt.content.cloneNode(!0)), this.officeLocationEl = this.shadowRoot.querySelector("#location"), this.jobTitleEl = this.shadowRoot.querySelector("#jobtitle"), this.consultantNameEl = this.shadowRoot.querySelector("#name"), this.profileImageEl = this.shadowRoot.querySelector("#profileimage");
+    super(), this.attachShadow({ mode: "open" }).append(re.content.cloneNode(!0)), this.officeLocationEl = this.shadowRoot.querySelector("#location"), this.jobTitleEl = this.shadowRoot.querySelector("#jobtitle"), this.consultantNameEl = this.shadowRoot.querySelector("#name"), this.profileImageEl = this.shadowRoot.querySelector("#profileimage");
   }
   static get observedAttributes() {
     return ["image", "name", "jobtitle", "location"];
   }
-  attributeChangedCallback(t, s, e) {
-    if (t === "image")
-      if (e === "" || e === null) {
-        const i = "https://www.miles.no/newsite/wp-content/uploads/2019/06/miles_smile.png";
-        this.profileImageEl.setAttribute("src", i), this.profileImageEl.setAttribute("alt", "Miles Profile Card Image");
+  attributeChangedCallback(e, i, t) {
+    if (e === "image")
+      if (t === "" || t === null) {
+        const o = "https://www.miles.no/newsite/wp-content/uploads/2019/06/miles_smile.png";
+        this.profileImageEl.setAttribute("src", o), this.profileImageEl.setAttribute("alt", "Miles Profile Card Image");
       } else
-        this.profileImageEl.setAttribute("src", e), this.profileImageEl.setAttribute("alt", "Miles Profile Card Image");
-    t === "location" && (this.officeLocationEl.textContent = e), t === "jobtitle" && (this.jobTitleEl.textContent = e), t === "name" && (this.shadowRoot.querySelector("a").setAttribute("href", e.split(" ").join("-").toLowerCase()), this.consultantNameEl.textContent = e);
+        this.profileImageEl.setAttribute("src", t), this.profileImageEl.setAttribute("alt", "Miles Profile Card Image");
+    e === "location" && (this.officeLocationEl.textContent = t), e === "jobtitle" && (this.jobTitleEl.textContent = t), e === "name" && (this.shadowRoot.querySelector("a").setAttribute("href", t.split(" ").join("-").toLowerCase()), this.consultantNameEl.textContent = t);
   }
   connectedCallback() {
   }
   disconnectedCallback() {
   }
 }
-const A = "miles-profile-card";
-customElements.get(A) || customElements.define(A, It);
-const Ft = "";
-class jt extends HTMLElement {
+const S = "miles-profile-card";
+customElements.get(S) || customElements.define(S, Ve);
+const je = `:host{display:inline-block;color:var(--miles_primary_light)}.info{background-color:var(--miles_secondary_four);border-radius:0 99rem 99rem;overflow:hidden;padding:1rem 3rem;display:flex;justify-content:center;align-items:center;flex-direction:row;gap:1.5rem;color:inherit}.info__icon{font-size:1.2rem;font-weight:700}.info__description{font-weight:700;max-width:15rem;font-size:1rem}.info--link{cursor:pointer}
+`;
+class Ie extends HTMLElement {
   constructor() {
     super();
     a(this, "removeColor", () => {
@@ -818,12 +822,12 @@ class jt extends HTMLElement {
     a(this, "goTo", () => {
       window.location.href = escape(this.link);
     });
-    const s = this.attachShadow({ mode: "open" });
-    this.link = null, s.innerHTML = `
+    const i = this.attachShadow({ mode: "open" });
+    this.link = null, i.innerHTML = `
         <style>
-      	${Ft}
+      	${je}
 
-        ${l}
+        ${r}
         </style>
         <div class="info">
           <span class="info__icon">
@@ -838,8 +842,8 @@ class jt extends HTMLElement {
   static get observedAttributes() {
     return ["link"];
   }
-  attributeChangedCallback(s, e, i) {
-    s === "link" && (this.link = i, this.shadowRoot.querySelector(".info").classList.add("info--link"), this.mic = this.shadowRoot.querySelector('slot[name="icon"]').assignedNodes()[0]);
+  attributeChangedCallback(i, t, o) {
+    i === "link" && (this.link = o, this.shadowRoot.querySelector(".info").classList.add("info--link"), this.mic = this.shadowRoot.querySelector('slot[name="icon"]').assignedNodes()[0]);
   }
   connectedCallback() {
     this.link && (this.addEventListener("click", this.goTo), this.addEventListener("mouseenter", this.addColor), this.addEventListener("mouseleave", this.removeColor));
@@ -848,14 +852,15 @@ class jt extends HTMLElement {
     this.removeEventListener("click", this.goTo), this.removeEventListener("mouseenter", this.addColor), this.removeEventListener("mouseleave", this.removeColor);
   }
 }
-const T = "miles-info";
-customElements.get(T) || customElements.define(T, jt);
-const Dt = "", at = document.createElement("template");
-at.innerHTML = `
+const A = "miles-info";
+customElements.get(A) || customElements.define(A, Ie);
+const Fe = `:host{display:block;color:inherit}.podcast-teaser{box-sizing:border-box;width:100vw;position:relative;height:300px}.bg{background-color:#ff303b1a;width:100%;height:66%;position:absolute;bottom:0}.inner{height:100%;display:flex;flex-direction:column;width:80%;margin:auto;align-items:center;gap:1em;padding-top:2em;max-width:var(--content_width_max)}miles-info{right:10%;left:10%;position:absolute;top:.75em}@media (min-width: 768px){.inner{flex-direction:row;padding-top:0}.podcast-teaser{height:210px}}@media (max-width: 1024px) and (min-width: 769px){miles-info{width:28%;left:unset;top:-1em;right:var(--halve_margin_offset_large)}}@media (min-width: 1025px){miles-info{max-width:250px;left:unset;width:unset;top:1em;right:var(--halve_margin_offset_large)}}.left{display:flex;flex-direction:row;align-items:center;gap:1em}.text{display:flex;flex-direction:column}h3,p{margin:0}p{font-size:.8em;color:var(--miles_primary_dark)}svg{height:70px;width:70px}a.more{color:inherit;right:var(--halve_margin_offset_large);bottom:1em;position:absolute;display:inline-block}a.more:after{content:"→"}
+`, ae = document.createElement("template");
+ae.innerHTML = `
       <style>
-      	${Dt}
+      	${Fe}
 
-        ${l}
+        ${r}
         </style>
         <div class="podcast-teaser">
         <div class="bg">
@@ -882,32 +887,33 @@ at.innerHTML = `
           </miles-info>
         </div>
         `;
-class Ot extends HTMLElement {
+class Oe extends HTMLElement {
   constructor() {
     super();
-    a(this, "timeFormat", (s) => new Intl.DateTimeFormat("no", {
+    a(this, "timeFormat", (i) => new Intl.DateTimeFormat("no", {
       month: "short",
       day: "numeric"
-    }).format(s));
-    this.attachShadow({ mode: "open" }).appendChild(at.content.cloneNode(!0)), this.titlEl = this.shadowRoot.querySelector("#title"), this.dateEl = this.shadowRoot.querySelector("#date");
+    }).format(i));
+    this.attachShadow({ mode: "open" }).appendChild(ae.content.cloneNode(!0)), this.titlEl = this.shadowRoot.querySelector("#title"), this.dateEl = this.shadowRoot.querySelector("#date");
   }
   static get observedAttributes() {
     return ["episode_title", "published_date", "link"];
   }
-  attributeChangedCallback(s, e, i) {
-    s === "episode_title" && (this.titlEl.textContent = i), s === "published_date" && (this.dateEl.textContent = `${this.timeFormat(
-      new Date(i)
+  attributeChangedCallback(i, t, o) {
+    i === "episode_title" && (this.titlEl.textContent = o), i === "published_date" && (this.dateEl.textContent = `${this.timeFormat(
+      new Date(o)
     )} - MilesPodden`);
   }
 }
-const q = "miles-podcast-teaser";
-customElements.get(q) || customElements.define(q, Ot);
-const Qt = "", rt = document.createElement("template");
-rt.innerHTML = `
+const T = "miles-podcast-teaser";
+customElements.get(T) || customElements.define(T, Oe);
+const De = `:host{display:inline-block;color:red;--arrow-bg-color: #ffffff;--arrow-color: #b72a26}#arrow-nav{display:flex;padding:.8rem;border-radius:50%;background-color:#94e5db}svg{display:inline-block}
+`, ne = document.createElement("template");
+ne.innerHTML = `
   <style>
-	${Qt}
+	${De}
 
-  ${l}
+  ${r}
   </style>
   <div id="arrow-nav">
     <svg width="24" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -915,27 +921,28 @@ rt.innerHTML = `
     </svg>
   </div>
   `;
-class zt extends HTMLElement {
+class Qe extends HTMLElement {
   constructor() {
     super();
-    const t = this.attachShadow({ mode: "open" });
-    t.appendChild(rt.content.cloneNode(!0)), this.nav = t.querySelector("#arrow-nav");
+    const e = this.attachShadow({ mode: "open" });
+    e.appendChild(ne.content.cloneNode(!0)), this.nav = e.querySelector("#arrow-nav");
   }
   static get observedAttributes() {
     return ["width", "height", "color"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "width" && this.nav.setAttribute("width", e), t === "height" && this.nav.setAttribute("height", e), t === "color" && this.nav.setAttribute("color", e);
+  attributeChangedCallback(e, i, t) {
+    e === "width" && this.nav.setAttribute("width", t), e === "height" && this.nav.setAttribute("height", t), e === "color" && this.nav.setAttribute("color", t);
   }
 }
-const P = "miles-arrow-nav";
-customElements.get(P) || customElements.define(P, zt);
-const Ut = "", nt = document.createElement("template");
-nt.innerHTML = `
+const q = "miles-arrow-nav";
+customElements.get(q) || customElements.define(q, Qe);
+const Ue = `:host{--slide-container-height:calc(100vw - 2rem);--slide-container-width: 100vw;--slides-offset: 0;display:block;width:var(--slide-container-width);height:var(--slide-container-height);background-color:#f8ebe8;height:100%;padding-top:100px;padding-bottom:100px;overflow:hidden}@media (min-width: 768px){:host{--slide-container-height: 500px}}section{width:var(--slide-container-width);height:calc(var(--slide-container-height) + 3rem);position:relative}#leftnav,#rightnav{cursor:pointer;height:calc(500px - 2rem);top:1rem;width:80px;position:absolute;z-index:10;flex-direction:column;display:flex;align-items:center;justify-content:center}#nav-overlay-left,#nav-overlay-right{transition:opacity .5s ease-in-out;width:80px;top:1rem;z-index:10;position:absolute;height:calc(500px - 2rem);top:0rem;opacity:0;background-color:#fff}#nav-overlay-left:hover,#nav-overlay-right:hover{opacity:.6}miles-arrow-nav{z-index:15;opacity:.9}#nav-overlay-right{right:0}#rightnav{transform:rotate(180deg);right:0}section .slides{transform:translate(calc(var(--slides-offset) * var(--slide-container-height)));position:absolute;display:flex;flex-direction:row;transition:transform 1s cubic-bezier(.46,.03,.52,.96)}section .slides figure{position:relative;box-sizing:border-box;padding:1rem;height:var(--slide-container-height);aspect-ratio:1 / 1;margin:0}.overlay{position:absolute;height:100%;width:100%;background-repeat:no-repeat;background-size:contain;background-position:center;background-color:transparent;transform:scale(1.5);pointer-events:none;z-index:10;filter:drop-shadow(1px 1px 0px black)}.overlay.equinor{background-image:url(https://www.miles.no/newsite/wp-content/uploads/2021/06/equinor-logo-1.png);background-position-y:45%}.overlay.fjordkraft{background-image:url(https://www.miles.no/newsite/wp-content/uploads/2021/06/fjordkraft-logo.png);background-position:center}.overlay.tv2{background-image:url(https://www.miles.no/newsite/wp-content/uploads/2021/06/tv2-logo-1.png)}.overlay.cutters{background-image:url(https://www.miles.no/newsite/wp-content/uploads/2021/06/cutters-logo.png)}.overlay.scaleaq{background-image:url(https://www.miles.no/newsite/wp-content/uploads/2021/06/scale-aq-logo.png);transform:scale(1.2)}section .slides figure img{height:100%;width:100%;object-fit:cover;border-radius:30px;app-region:no-drag;filter:opacity(60%);animation:fadeIn 1s cubic-bezier(.46,.03,.05,.99)}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}nav{max-width:100vw;position:absolute;width:100%;display:flex;flex-direction:row;justify-content:center;align-items:center;gap:1em;bottom:0;height:3rem}.nav-dot{border-radius:50%;display:inline-block;height:.5em;width:.5em;background-color:var(--miles_secondary_four);cursor:pointer}#slide-wrapper{width:100vw}h2{font-size:2rem;margin:3rem auto;text-align:center}@media (min-width: 768px){h2{font-size:3rem}.nav-dot{height:1em;width:1em}}.active{background-color:var(--miles_secondary_five)}
+`, le = document.createElement("template");
+le.innerHTML = `
   <style>
-	${Ut}
+	${Ue}
 
-  ${l}
+  ${r}
   </style>
   <div id="slide-wrapper">
     <h2>Noen av våre kunder</h2>
@@ -954,7 +961,7 @@ nt.innerHTML = `
     </section>
   </div>
     `;
-class Kt extends HTMLElement {
+class Ke extends HTMLElement {
   constructor() {
     super();
     a(this, "goRight", () => {
@@ -963,56 +970,56 @@ class Kt extends HTMLElement {
     a(this, "goLeft", () => {
       this.startAutoPlay(!1), Math.abs(this.index) !== this.numberOfSlides - 1 && (this.index--, this.setActiveDot(this.index), this.slides.style.setProperty("--slides-offset", this.index));
     });
-    a(this, "goToSlide", (s) => {
-      let e = parseInt(s.target.dataset.slide) * -1;
-      this.numberOfSlides - 1 === parseInt(s.target.dataset.slide) && (e = 0), this.startAutoPlay(!1), this.slides.style.setProperty("--slides-offset", e), this.setActiveDot(e);
+    a(this, "goToSlide", (i) => {
+      let t = parseInt(i.target.dataset.slide) * -1;
+      this.numberOfSlides - 1 === parseInt(i.target.dataset.slide) && (t = 0), this.startAutoPlay(!1), this.slides.style.setProperty("--slides-offset", t), this.setActiveDot(t);
     });
-    a(this, "startAutoPlay", (s) => {
-      s ? this.autoPlay = setInterval(() => {
+    a(this, "startAutoPlay", (i) => {
+      i ? this.autoPlay = setInterval(() => {
         Math.abs(this.index) === this.numberOfSlides - 2 ? this.index = 0 : this.index--, this.setActiveDot(this.index), this.slides.style.setProperty("--slides-offset", this.index);
       }, 5e3) : clearInterval(this.autoPlay);
     });
-    a(this, "setActiveDot", (s) => {
-      const e = this.controls.querySelectorAll(".nav-dot");
-      e.forEach((i) => {
-        i.classList.remove("active");
-      }), e.forEach((i) => {
-        parseInt(i.getAttribute("data-slide")) === Math.abs(s) && i.classList.add("active");
+    a(this, "setActiveDot", (i) => {
+      const t = this.controls.querySelectorAll(".nav-dot");
+      t.forEach((o) => {
+        o.classList.remove("active");
+      }), t.forEach((o) => {
+        parseInt(o.getAttribute("data-slide")) === Math.abs(i) && o.classList.add("active");
       });
     });
-    const s = this.attachShadow({ mode: "open" });
-    s.appendChild(nt.content.cloneNode(!0)), this.slides = s.querySelector(".slides"), this.controls = s.querySelector(".controls"), this.wrapper = s.querySelector("#slide-wrapper"), this.numberOfSlides = 0, this.autoPlay = 0, this.index = 0, this.logos = ["equinor", "fjordkraft", "tv2", "cutters", "scaleaq"], this.rightNav = s.querySelector("#rightnav"), this.leftNav = s.querySelector("#leftnav");
+    const i = this.attachShadow({ mode: "open" });
+    i.appendChild(le.content.cloneNode(!0)), this.slides = i.querySelector(".slides"), this.controls = i.querySelector(".controls"), this.wrapper = i.querySelector("#slide-wrapper"), this.numberOfSlides = 0, this.autoPlay = 0, this.index = 0, this.logos = ["equinor", "fjordkraft", "tv2", "cutters", "scaleaq"], this.rightNav = i.querySelector("#rightnav"), this.leftNav = i.querySelector("#leftnav");
   }
   connectedCallback() {
-    let s = {
+    let i = {
       root: null,
       rootMargin: "0px",
       threshold: 1
     };
-    this.observer = new IntersectionObserver((i) => {
-      i.forEach((r) => {
-        r.isIntersecting ? this.startAutoPlay(!0) : this.startAutoPlay(!1);
+    this.observer = new IntersectionObserver((o) => {
+      o.forEach((n) => {
+        n.isIntersecting ? this.startAutoPlay(!0) : this.startAutoPlay(!1);
       });
-    }, s), this.observer.observe(this.wrapper), this.controls.addEventListener("click", this.goToSlide), this.rightNav.addEventListener("click", this.goLeft), this.leftNav.addEventListener("click", this.goRight);
-    const e = this.shadowRoot.querySelector("slot");
-    if (e) {
-      let i = e.assignedElements().length === 1 ? e.assignedElements()[0].children : e.assignedElements();
-      if (typeof i == "object")
+    }, i), this.observer.observe(this.wrapper), this.controls.addEventListener("click", this.goToSlide), this.rightNav.addEventListener("click", this.goLeft), this.leftNav.addEventListener("click", this.goRight);
+    const t = this.shadowRoot.querySelector("slot");
+    if (t) {
+      let o = t.assignedElements().length === 1 ? t.assignedElements()[0].children : t.assignedElements();
+      if (typeof o == "object")
         try {
-          const r = Array.from(i);
-          this.numberOfSlides = i.length, r.forEach((n, u) => {
+          const n = Array.from(o);
+          this.numberOfSlides = o.length, n.forEach((l, p) => {
             const c = document.createElement("figure"), h = document.createElement("div");
-            if (h.setAttribute("class", "overlay"), n.classList.forEach((d) => {
+            if (h.setAttribute("class", "overlay"), l.classList.forEach((d) => {
               this.logos.includes(d) && h.classList.add(d);
-            }), c.setAttribute("data-slide-image", u), c.appendChild(h), n.querySelector("img")) {
-              const d = n.querySelector("img");
+            }), c.setAttribute("data-slide-image", p), c.appendChild(h), l.querySelector("img")) {
+              const d = l.querySelector("img");
               d.setAttribute("draggable", !1), c.appendChild(d), this.slides.appendChild(c);
               const m = document.createElement("span");
-              m.setAttribute("class", "nav-dot"), m.setAttribute("data-slide", u), this.controls.appendChild(m);
+              m.setAttribute("class", "nav-dot"), m.setAttribute("data-slide", p), this.controls.appendChild(m);
             }
           });
         } catch {
-          console.log(i);
+          console.log(o);
         }
     }
     this.setActiveDot(this.index);
@@ -1023,16 +1030,17 @@ class Kt extends HTMLElement {
   static get observedAttributes() {
     return ["inview", "autoplay"];
   }
-  attributeChangedCallback(s, e, i) {
+  attributeChangedCallback(i, t, o) {
   }
 }
-const $ = "miles-image-slider";
-customElements.get($) || customElements.define($, Kt);
-const Xt = "", dt = document.createElement("template");
-dt.innerHTML = `
+const P = "miles-image-slider";
+customElements.get(P) || customElements.define(P, Ke);
+const Ye = `:host{display:block;color:inherit;--maxWidth: 350px;margin-left:10vw;margin-right:10vw}#header{display:flex;max-width:var(--content_width_max);margin:2rem auto;flex-direction:column}#fagblogg-teaser{box-sizing:border-box;width:100%;max-width:var(--content_width_max);position:relative;min-height:800px;margin:auto}.bg{width:100%;height:50%;position:relative;top:5rem}miles-info{position:relative;width:300px}::slotted(ul){grid-template-columns:repeat(1,100%)!important;display:grid!important;gap:2rem!important}@media (min-width: 768px){::slotted(ul){grid-template-columns:repeat(3,calc(33% - 1rem))!important;display:grid!important;gap:2rem!important}#header{flex-direction:row}.podcast-teaser{height:210px}}@media (max-width: 1024px) and (min-width: 769px){miles-info{left:unset;top:1em}.bg{width:100%;height:35%;position:absolute;top:5rem}}@media (min-width: 1025px){miles-info{left:unset;width:unset}}.left{display:flex;flex-direction:row;align-items:center;gap:1em}.text{display:flex;flex-direction:column}h2{margin-bottom:.2rem;line-height:150%;font-size:var(--miles-h2);color:var(--miles_secondary_four);flex-grow:1}@media (min-width: 769px){h2{margin-bottom:1rem}}p{font-size:.8em;color:var(--miles_primary_dark);margin:auto}svg{height:70px;width:70px}a{color:inherit;right:var(--halve_margin_offset_large);bottom:1em;position:absolute;display:inline-block}a:after{content:"→"}
+`, de = document.createElement("template");
+de.innerHTML = `
   <style>
-  ${l}
-${Xt}
+  ${r}
+${Ye}
   </style>
   <div id="fagblogg-teaser">
     <div class="bg">
@@ -1051,34 +1059,35 @@ ${Xt}
 
   </div>
 `;
-class Gt extends HTMLElement {
+class We extends HTMLElement {
   constructor() {
     super();
-    a(this, "goToPost", (s) => {
-      window.location.href = escape(s.target.dataset.post);
+    a(this, "goToPost", (i) => {
+      window.location.href = escape(i.target.dataset.post);
     });
-    this.attachShadow({ mode: "open" }), this.shadowRoot.append(dt.content.cloneNode(!0)), this.mic = this.shadowRoot.querySelector("#mic");
+    this.attachShadow({ mode: "open" }), this.shadowRoot.append(de.content.cloneNode(!0)), this.mic = this.shadowRoot.querySelector("#mic");
   }
   connectedCallback() {
-    const s = this.shadowRoot.querySelector("slot").assignedElements()[0];
-    if (s) {
-      const e = s.querySelectorAll("img"), i = Array.from(s.querySelectorAll("a"));
-      Array.from(e).forEach((r, n) => {
-        r.setAttribute("style", "height: auto; cursor: pointer;"), r.setAttribute("data-post", i[n].href), r.addEventListener("click", this.goToPost);
+    const i = this.shadowRoot.querySelector("slot").assignedElements()[0];
+    if (i) {
+      const t = i.querySelectorAll("img"), o = Array.from(i.querySelectorAll("a"));
+      Array.from(t).forEach((n, l) => {
+        n.setAttribute("style", "height: auto; cursor: pointer;"), n.setAttribute("data-post", o[l].href), n.addEventListener("click", this.goToPost);
       });
     }
   }
   disconnectedCallback() {
   }
 }
-const N = "miles-fagblogg-teaser";
-customElements.get(N) || customElements.define(N, Gt);
-const Jt = "", ct = document.createElement("template");
-ct.innerHTML = `
+const $ = "miles-fagblogg-teaser";
+customElements.get($) || customElements.define($, We);
+const Xe = `:host{display:block;color:inherit;width:inherit;height:inherit}#blog-card{display:flex;flex-direction:column;gap:.2rem;width:100%;border-radius:1rem;overflow:hidden}slot[name=title]::slotted(*){font-size:1.5rem;margin:0}a{display:block;width:100%;text-decoration:none;color:inherit}.text{background-color:var(--miles_secondary_four);color:var(--miles_primary_light);padding:2rem;height:110px;display:flex;flex-direction:column}slot[name=title]::slotted(*){overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical}slot[name=meta]{display:block;flex-grow:1}#updated{display:none}::slotted(figure){margin:0;aspect-ratio:4/5;overflow:hidden}
+`, ce = document.createElement("template");
+ce.innerHTML = `
   <style>
-	${Jt}
+	${Xe}
 
-  ${l}
+  ${r}
   </style>
   <div id="blog-card">
     <a href="#">
@@ -1096,50 +1105,51 @@ ct.innerHTML = `
     </div>
   </div>
 `;
-class Wt extends HTMLElement {
+class Ge extends HTMLElement {
   constructor() {
     super();
-    a(this, "timeFormat", (s) => new Intl.DateTimeFormat("no", {
+    a(this, "timeFormat", (i) => new Intl.DateTimeFormat("no", {
       month: "short",
       day: "numeric",
       year: "numeric"
-    }).format(s));
-    this.attachShadow({ mode: "open" }), this.shadowRoot.append(ct.content.cloneNode(!0)), this.posted = this.shadowRoot.querySelector("#posted"), this.updated = this.shadowRoot.querySelector("#updated"), this.author = this.shadowRoot.querySelector("#author");
+    }).format(i));
+    this.attachShadow({ mode: "open" }), this.shadowRoot.append(ce.content.cloneNode(!0)), this.posted = this.shadowRoot.querySelector("#posted"), this.updated = this.shadowRoot.querySelector("#updated"), this.author = this.shadowRoot.querySelector("#author");
   }
   static get observedAttributes() {
     return ["url", "author", "posted", "updated"];
   }
-  attributeChangedCallback(s, e, i) {
-    s === "url" && this.shadowRoot.querySelectorAll("a").forEach((r) => {
-      r.setAttribute("href", i);
-    }), s === "author" && (this.author.textContent = i);
+  attributeChangedCallback(i, t, o) {
+    i === "url" && this.shadowRoot.querySelectorAll("a").forEach((n) => {
+      n.setAttribute("href", o);
+    }), i === "author" && (this.author.textContent = o);
   }
   connectedCallback() {
-    const s = this.shadowRoot.querySelector('slot[name="image"]').assignedElements();
-    s[0]?.children && Array.from(s[0]?.children).forEach((i) => {
-      i.style.objectFit = "cover", i.style.aspectRatio = "2/3", i.style.width = "100%";
+    const i = this.shadowRoot.querySelector('slot[name="image"]').assignedElements();
+    i[0]?.children && Array.from(i[0]?.children).forEach((o) => {
+      o.style.objectFit = "cover", o.style.aspectRatio = "2/3", o.style.width = "100%";
     });
-    const e = this.shadowRoot.querySelector('slot[name="meta"]').assignedElements();
-    e[0]?.children && (Array.from(e[0]?.children).forEach((i) => {
-      const r = Array.from(i.children[0].children);
+    const t = this.shadowRoot.querySelector('slot[name="meta"]').assignedElements();
+    t[0]?.children && (Array.from(t[0]?.children).forEach((o) => {
+      const n = Array.from(o.children[0].children);
       this.posted.textContent = `${this.timeFormat(
-        new Date(r[0].dateTime)
+        new Date(n[0].dateTime)
       )}`, this.updated.textContent = `${this.timeFormat(
-        new Date(r[1].dateTime)
+        new Date(n[1].dateTime)
       )}`;
-    }), e[0].remove());
+    }), t[0].remove());
   }
   disconnectedCallback() {
   }
 }
-const Z = "miles-blog-card";
-customElements.get(Z) || customElements.define(Z, Wt);
-const Yt = "", ht = document.createElement("template");
-ht.innerHTML = `
+const z = "miles-blog-card";
+customElements.get(z) || customElements.define(z, Ge);
+const Je = `:host{--topOffset: 1rem;--bottomOffset: 5rem;--blockRadius: 30px;color:inherit;display:block}#overlap-block{padding:0 2rem;position:relative}#feature-block{border-radius:30px;background-color:#f8ebe8;padding:3rem;width:var(--width);position:relative}@media (min-width: 768px){:host{--topOffset: 16rem}#overlap-block{width:80vw;max-width:var(--content_width_max);margin:auto;position:relative}.parent{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:var(--topOffset) auto var(--bottomOffset);grid-column-gap:0px;grid-row-gap:0px}.div1{grid-area:1 / 1 / 2 / 6}.div2{grid-area:1 / 5 / 2 / 13;background-color:var(--miles_secondary_four)}.inner{position:relative;z-index:1;grid-area:2 / 1 / 2 / 13}.inner #content_grid{display:flex;flex-direction:row}#feature-block{border-radius:30px;background-color:#f8ebe8;padding:3rem;width:var(--width);position:relative}::slotted(div){font-size:1.5rem}#feature-block:after{z-index:-1;width:100px;height:100%;content:"";position:absolute;top:0;right:0;background-color:var(--miles_secondary_four)}.div1,.div2{border-top-left-radius:var(--blockRadius);border-top-right-radius:var(--blockRadius);height:var(--topOffset)}.div4{border-bottom-left-radius:var(--blockRadius);border-bottom-right-radius:var(--blockRadius)}.div3{grid-area:1 / 1 / 2 / 6}.div4{grid-area:3 / 5 / 3 / 13;background-color:var(--miles_secondary_four)}#list{width:100%;border-radius:30px;display:flex;flex-direction:column;color:var(--miles_primary_light);background-color:var(--miles_secondary_four);padding:3rem;margin:0;position:relative;z-index:5;min-width:fit-content;left:-10vw;bottom:10vw}}#list{border-radius:unset;left:unset;bottom:unset;display:flex;flex-direction:column;color:var(--miles_primary_light);background-color:var(--miles_secondary_four);padding:3rem;margin:0;position:relative;z-index:5;min-width:fit-content}#list ul{position:relative;top:calc(-1 * var(--topOffset));padding:0}#list li{line-height:38px;list-style:none;padding:.5rem 0;font-size:1.5rem}miles-bulb{position:absolute;right:6rem;bottom:5rem;z-index:20}miles-curve{margin-right:.5em}
+`, he = document.createElement("template");
+he.innerHTML = `
   <style>
-	${Yt}
+	${Je}
 
-  ${l}
+  ${r}
   </style>
   <div id="overlap-block">
     <div class="parent">
@@ -1159,12 +1169,12 @@ ht.innerHTML = `
    <!-- <miles-bulb color="var(--miles_secondary_two)" width="3rem"></miles-bulb> -->
   </div>
 `;
-class te extends HTMLElement {
+class et extends HTMLElement {
   constructor() {
-    super(), this.attachShadow({ mode: "open" }), this.shadowRoot.append(ht.content.cloneNode(!0)), this.list = this.shadowRoot.querySelector("#list");
+    super(), this.attachShadow({ mode: "open" }), this.shadowRoot.append(he.content.cloneNode(!0)), this.list = this.shadowRoot.querySelector("#list");
   }
   connectedCallback() {
-    const t = [
+    const e = [
       "Systemutvikling",
       "Prosjektledelse",
       "Testledelse",
@@ -1173,22 +1183,23 @@ class te extends HTMLElement {
       "Arkitektur",
       "Rådgivning",
       "Team as a service"
-    ], s = document.createElement("ul");
-    t.forEach((e) => {
-      const i = document.createElement("li");
-      i.innerHTML = `<miles-curve color="currentColor" width="1em"></miles-curve><span>${e}</span>`, s.append(i);
-    }), this.list.append(s);
+    ], i = document.createElement("ul");
+    e.forEach((t) => {
+      const o = document.createElement("li");
+      o.innerHTML = `<miles-curve color="currentColor" width="1em"></miles-curve><span>${t}</span>`, i.append(o);
+    }), this.list.append(i);
   }
   disconnectedCallback() {
   }
 }
-const _ = "miles-overlap-block";
-customElements.get(_) || customElements.define(_, te);
-const ee = "", mt = document.createElement("template");
-mt.innerHTML = `
+const N = "miles-overlap-block";
+customElements.get(N) || customElements.define(N, et);
+const tt = `:host{--headerHeight: 200px;--max-banner-height: 620px;--banner-border-radius: 30px;--banner-animation: all .47s cubic-bezier(.46, .03, .52, .96);color:#fcf8f3}*,*:before,*:after{box-sizing:border-box;font-family:Manrope,sans-serif}.office-banner{background:var(--miles_secondary_four);border-radius:var(--banner-border-radius);overflow:hidden;position:relative;min-height:320px}@media (min-width: 811px){.office-banner{height:var(--max-banner-height)}}.office-banner__background{background-repeat:no-repeat;background-position:center center;background-size:cover;border-radius:var(--banner-border-radius);height:100%;left:0;overflow:hidden;position:absolute;top:0;transition:var(--banner-animation);width:100%;z-index:1}.office-banner__content{padding:2rem;position:relative;transition:var(--banner-animation);z-index:5}@media (min-width: 811px){.office-banner__content{transform:translateY(calc(100% - 60px - 6rem));height:100%}}.office-banner__content:before{background:var(--miles_secondary_four);content:"";width:100%;height:100%;left:0;top:0;transition:var(--banner-animation);position:absolute;opacity:.7;z-index:-1}.office-banner__details{display:flex;flex-direction:column;gap:3rem;overflow:hidden}@media (min-width: 811px){.office-banner__details{align-items:flex-start;flex-direction:row;max-height:100%;overflow:hidden}}.office-banner .anim{display:grid;grid-template-rows:0fr;transition:var(--banner-animation)}@media (min-width: 811px){.office-banner .anim{max-height:calc(100% - 60px - 2rem)}}.office-banner__title{font-size:36px;line-height:60px;margin:0}@media (min-width: 811px){.office-banner__title{font-size:56px}}.office-banner__trigger{align-items:center;cursor:pointer;display:flex;gap:1rem;justify-content:flex-start;padding:1rem 0;transition:var(--banner-animation);width:fit-content}@media (min-width: 811px){.office-banner__trigger{gap:2rem;margin-bottom:2rem}}.office-banner__trigger-arrow{height:24px;transform:rotate(180deg);transition:var(--banner-animation);width:24px}@media (min-width: 811px){.office-banner__trigger-arrow{height:40px;transform:rotate(0);width:40px}}@media (min-width: 811px){.office-banner__office{flex:0 0 33%}}.office-banner__people{display:flex;flex-direction:column;flex:1 1 auto;gap:2rem;max-height:100%}@media (min-width: 811px){.office-banner__people{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(50%,max(200px,33.3333333333%)),1fr))}}.office-banner--open{aspect-ratio:auto}.office-banner--open .office-banner__background{filter:blur(5px)}.office-banner--open .office-banner__content{transform:translateY(0)}.office-banner--open .office-banner__content:before{opacity:1}.office-banner--open .office-banner__trigger{margin-bottom:0}.office-banner--open .office-banner__trigger-arrow{transform:rotate(0)}@media (min-width: 811px){.office-banner--open .office-banner__trigger-arrow{transform:rotate(180deg)}}.office-banner--open .anim{grid-template-rows:1fr}
+`, me = document.createElement("template");
+me.innerHTML = `
 	<style>
-		${ee}
-		${l}
+		${tt}
+		${r}
 	</style>
 	<div id="banner" class="office-banner">
 		<div class="office-banner__content">
@@ -1210,19 +1221,19 @@ mt.innerHTML = `
 		<div class="office-banner__background" id="bannerImage"></div>
 	</div>
 `;
-class se extends HTMLElement {
+class it extends HTMLElement {
   constructor() {
     super();
     a(this, "toggleMenu", () => {
       this.banner.classList.toggle("office-banner--open");
     });
-    this.attachShadow({ mode: "open" }), this.shadowRoot.append(mt.content.cloneNode(!0)), this.banner = this.shadowRoot.querySelector("#banner"), this.triggerEl = this.shadowRoot.querySelector(".js-banner-trigger"), this.backgroundEl = this.shadowRoot.querySelector(".office-banner__background"), this.titleEl = this.shadowRoot.querySelector(".office-banner__title"), this.header = null;
+    this.attachShadow({ mode: "open" }), this.shadowRoot.append(me.content.cloneNode(!0)), this.banner = this.shadowRoot.querySelector("#banner"), this.triggerEl = this.shadowRoot.querySelector(".js-banner-trigger"), this.backgroundEl = this.shadowRoot.querySelector(".office-banner__background"), this.titleEl = this.shadowRoot.querySelector(".office-banner__title"), this.header = null;
   }
   static get observedAttributes() {
     return ["background", "city"];
   }
-  attributeChangedCallback(s, e, i) {
-    s === "background" && (this.backgroundEl.style.backgroundImage = `url(${i})`), s === "city" && (this.titleEl.textContent = i);
+  attributeChangedCallback(i, t, o) {
+    i === "background" && (this.backgroundEl.style.backgroundImage = `url(${o})`), i === "city" && (this.titleEl.textContent = o);
   }
   connectedCallback() {
     this.triggerEl.addEventListener("click", this.toggleMenu);
@@ -1232,12 +1243,13 @@ class se extends HTMLElement {
   }
 }
 const R = "miles-office-banner";
-customElements.get(R) || customElements.define(R, se);
-const ie = "", ut = document.createElement("template");
-ut.innerHTML = `
+customElements.get(R) || customElements.define(R, it);
+const ot = `:host{display:inline-block;transition:transform .5s cubic-bezier(.46,.03,.52,.96)}#arrow{justify-content:center;display:flex;width:inherit;height:inherit;align-items:center}:host(.open){transform:rotate(180deg)}svg{width:inherit;height:inherit}
+`, pe = document.createElement("template");
+pe.innerHTML = `
   <style>
-	${ie}
-  ${l}
+	${ot}
+  ${r}
     </style>
     <div id="arrow">
       <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1245,18 +1257,19 @@ ut.innerHTML = `
       </svg>
     </div>
    `;
-class oe extends HTMLElement {
+class st extends HTMLElement {
   constructor() {
-    super(), this.attachShadow({ mode: "open" }), this.shadowRoot.append(ut.content.cloneNode(!0));
+    super(), this.attachShadow({ mode: "open" }), this.shadowRoot.append(pe.content.cloneNode(!0));
   }
 }
-const B = "miles-arrow";
-customElements.get(B) || customElements.define(B, oe);
-const le = "", pt = document.createElement("template");
-pt.innerHTML = `
+const Z = "miles-arrow";
+customElements.get(Z) || customElements.define(Z, st);
+const rt = `:host{display:block;color:inherit;width:100%}#card-wrapper{box-sizing:border-box}#card{letter-spacing:.02em;max-width:400px;margin:0;border-radius:4px;display:flex;flex-direction:row;gap:1em}#card.author{max-width:100%;background-color:transparent}#card.wide{flex-direction:column;background-color:transparent;gap:.3em}@media (min-width: 768px){#card.wide{max-width:100%;color:var(--miles_secondary_four);margin:0;flex-direction:row;gap:1em}}h3{margin:0;font-size:24px;font-style:normal;font-weight:700}#title{margin-top:.3em;margin-bottom:.5em;line-height:22px;font-weight:700}#card.wide span#title{order:0}#phone_el,#email_el{display:grid;grid-template-columns:1.2em max-content auto;gap:10px}#card:not(.wide) #phone_el,#card:not(.wide) #email_el{display:flex;flex-direction:row}#card:not(.wide) #phone_el .icon,#card:not(.wide) #email_el .icon{display:none}figure{aspect-ratio:1/1;border-top-left-radius:30px;border-top-right-radius:30px;flex:0 0 auto;margin:0;overflow:hidden;padding:0;width:90px}#card.wide figure{aspect-ratio:1/1;object-fit:cover;width:100%}@media (min-width: 768px){#card.wide figure{aspect-ratio:16/9;background-color:#fff;border-bottom-left-radius:30px;border-top-left-radius:30px;border-top-right-radius:0;display:flex;justify-content:center;max-width:320px}}::slotted(img),img{object-fit:cover;width:100%;background-color:#fff;filter:grayscale(1);aspect-ratio:1 / 1;border-radius:50%}#card.wide ::slotted(img),#card.wide img{border-radius:0;aspect-ratio:1 / 1;min-width:100%}::slotted(*){color:inherit}#extras{background-color:var(--miles_secondary_four)}a,span{color:inherit;text-decoration:none;display:inline}span{display:flex;flex-direction:column;overflow:hidden;line-height:1.2em;gap:.2em}#card.wide span{flex-direction:row}#group{display:flex;flex-direction:column;gap:.2em}#card.author #group{justify-content:center;display:flex;flex-direction:column;gap:.5em}#card.wide #group{background-color:#f8ebe8;width:unset;padding:1rem 2rem;justify-content:center}@media (min-width: 768px){#card.wide #group{padding:0 2rem;width:100%}}
+`, ge = document.createElement("template");
+ge.innerHTML = `
   <style>
-	${le}
-    ${l}
+	${rt}
+    ${r}
     </style>
   <div id="card-wrapper">
       <div id="card">
@@ -1283,42 +1296,43 @@ pt.innerHTML = `
       </div>
     </div>
     `;
-class gt extends HTMLElement {
+class ue extends HTMLElement {
   constructor() {
-    super(), this.attachShadow({ mode: "open" }), this.shadowRoot.append(pt.content.cloneNode(!0)), this.emailEl = this.shadowRoot.querySelector("#email_el"), this.nameEl = this.shadowRoot.querySelector("#name"), this.phoneEl = this.shadowRoot.querySelector("#phone_el"), this.phoneAnchor = this.shadowRoot.querySelector("#phone"), this.mailAnchor = this.shadowRoot.querySelector("#email"), this.titleEl = this.shadowRoot.querySelector("#title"), this.firgureEl = this.shadowRoot.querySelector("figure"), this.card = this.shadowRoot.querySelector("#card");
+    super(), this.attachShadow({ mode: "open" }), this.shadowRoot.append(ge.content.cloneNode(!0)), this.emailEl = this.shadowRoot.querySelector("#email_el"), this.nameEl = this.shadowRoot.querySelector("#name"), this.phoneEl = this.shadowRoot.querySelector("#phone_el"), this.phoneAnchor = this.shadowRoot.querySelector("#phone"), this.mailAnchor = this.shadowRoot.querySelector("#email"), this.titleEl = this.shadowRoot.querySelector("#title"), this.firgureEl = this.shadowRoot.querySelector("figure"), this.card = this.shadowRoot.querySelector("#card");
   }
   static get observedAttributes() {
     return ["email", "name", "phone", "jobtitle", "image", "variant"];
   }
-  attributeChangedCallback(t, s, e) {
-    if (t === "email" && (this.mailAnchor.setAttribute("href", `mailto:${e}`), this.mailAnchor.textContent = e), t === "name" && (this.nameEl.textContent = e), t === "phone" && (this.phoneAnchor.setAttribute("href", `tel:${e}`), this.shadowRoot.querySelector("#phone").style.display = "block", this.phoneAnchor.textContent = e), t === "jobtitle" && (this.titleEl.textContent = e), t === "image") {
-      const i = document.createElement("img");
-      i.setAttribute("src", e), this.firgureEl.append(i);
+  attributeChangedCallback(e, i, t) {
+    if (e === "email" && (this.mailAnchor.setAttribute("href", `mailto:${t}`), this.mailAnchor.textContent = t), e === "name" && (this.nameEl.textContent = t), e === "phone" && (this.phoneAnchor.setAttribute("href", `tel:${t}`), this.shadowRoot.querySelector("#phone").style.display = "block", this.phoneAnchor.textContent = t), e === "jobtitle" && (this.titleEl.textContent = t), e === "image") {
+      const o = document.createElement("img");
+      o.setAttribute("src", t), this.firgureEl.append(o);
     }
-    t === "variant" && (e === "wide" && this.card.classList.add("wide"), e === "author" && this.card.classList.add("author"));
+    e === "variant" && (t === "wide" && this.card.classList.add("wide"), t === "author" && this.card.classList.add("author"));
   }
 }
-const V = "miles-business-card";
-customElements.get(V) || customElements.define(V, gt);
-class ae extends gt {
+const B = "miles-business-card";
+customElements.get(B) || customElements.define(B, ue);
+class at extends ue {
   constructor() {
     super();
   }
   connectedCallback() {
     super.connectedCallback(), this.setAttribute("variant", "author");
   }
-  attributeChangedCallback(t, s, e) {
-    t !== "phone" && t !== "email" && super.attributeChangedCallback(t, s, e);
+  attributeChangedCallback(e, i, t) {
+    e !== "phone" && e !== "email" && super.attributeChangedCallback(e, i, t);
   }
 }
-const I = "miles-author-card";
-customElements.get(I) || customElements.define(I, ae);
-const re = "", vt = document.createElement("template");
-vt.innerHTML = `
+const V = "miles-author-card";
+customElements.get(V) || customElements.define(V, at);
+const nt = `:host{display:block;color:inherit}@media (min-width: 768px){:host{padding-left:calc(8rem - 2em)}}#wrapper{border:4px solid var(--miles_secondary_four);color:var(--miles_secondary_three);border-radius:1em;padding:2em;position:relative;line-height:2.5em}#heading{max-width:100%;background-color:var(--miles_secondary_four);color:var(--miles_primary_light);border-radius:1em;padding:1em 2em;position:relative;z-index:5;left:-4rem;margin-bottom:4rem}h2{margin:0}@media (min-width: 768px){#heading{max-width:60%;left:-8rem;border-radius:2em}#wrapper{border-radius:2em}h2{margin:revert}}p,p::slotted(*){font-size:1rem;line-height:2.5rem;font-weight:400}
+`, fe = document.createElement("template");
+fe.innerHTML = `
   <style>
-	${re}
+	${nt}
 
-  ${l}
+  ${r}
     </style>
     <div id="wrapper">
     <div id="heading">
@@ -1327,29 +1341,30 @@ vt.innerHTML = `
       <p><slot></slot></p>
     </div>
     `;
-class ne extends HTMLElement {
+class lt extends HTMLElement {
   constructor() {
-    super(), this.attachShadow({ mode: "open" }), this.shadowRoot.append(vt.content.cloneNode(!0)), this.headingEl = this.shadowRoot.querySelector("h2");
+    super(), this.attachShadow({ mode: "open" }), this.shadowRoot.append(fe.content.cloneNode(!0)), this.headingEl = this.shadowRoot.querySelector("h2");
   }
   static get observedAttributes() {
     return ["heading"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "heading" && (this.headingEl.textContent = e);
+  attributeChangedCallback(e, i, t) {
+    e === "heading" && (this.headingEl.textContent = t);
   }
   connectedCallback() {
   }
   disconnectedCallback() {
   }
 }
-const F = "miles-info-block";
-customElements.get(F) || customElements.define(F, ne);
-const de = "", Ct = document.createElement("template");
-Ct.innerHTML = `
+const j = "miles-info-block";
+customElements.get(j) || customElements.define(j, lt);
+const dt = `:host{display:inline-block;color:inherit;background-color:inherit}#wrapper{background-color:inherit;display:flex;flex-direction:column}h2{margin:0;line-height:33px}a{color:inherit}#address,#phone{margin-bottom:1rem}
+`, be = document.createElement("template");
+be.innerHTML = `
   <style>
-	${de}
+	${dt}
 
-  ${l}
+  ${r}
     </style>
     <div id="wrapper">
       <h2></h2>
@@ -1360,15 +1375,15 @@ Ct.innerHTML = `
       <div aria-describedby="ordnrlabel" id="orgnr"></div>
     </div>
     `;
-class ce extends HTMLElement {
+class ct extends HTMLElement {
   constructor() {
-    super(), this.attachShadow({ mode: "open" }), this.shadowRoot.append(Ct.content.cloneNode(!0)), this.nameEl = this.shadowRoot.querySelector("h2"), this.adresseEl = this.shadowRoot.querySelector("#address"), this.emailEl = this.shadowRoot.querySelector("#email"), this.phoneEl = this.shadowRoot.querySelector("#phone"), this.orgnrEl = this.shadowRoot.querySelector("#orgnr");
+    super(), this.attachShadow({ mode: "open" }), this.shadowRoot.append(be.content.cloneNode(!0)), this.nameEl = this.shadowRoot.querySelector("h2"), this.adresseEl = this.shadowRoot.querySelector("#address"), this.emailEl = this.shadowRoot.querySelector("#email"), this.phoneEl = this.shadowRoot.querySelector("#phone"), this.orgnrEl = this.shadowRoot.querySelector("#orgnr");
   }
   static get observedAttributes() {
     return ["map", "name", "address", "email", "phone", "orgnr"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "name" && (this.nameEl.textContent = e), t === "map" && (this.adresseEl.dataset.mapurl = e), t === "address" && (this.adresseEl.textContent = e), t === "email" && (this.emailEl.setAttribute("href", `mailto:${e}`), this.emailEl.textContent = e), t === "phone" && (this.phoneEl.setAttribute("href", `tel:${e}`), this.phoneEl.textContent = e), t === "orgnr" && (this.orgnrEl.textContent = e);
+  attributeChangedCallback(e, i, t) {
+    e === "name" && (this.nameEl.textContent = t), e === "map" && (this.adresseEl.dataset.mapurl = t), e === "address" && (this.adresseEl.textContent = t), e === "email" && (this.emailEl.setAttribute("href", `mailto:${t}`), this.emailEl.textContent = t), e === "phone" && (this.phoneEl.setAttribute("href", `tel:${t}`), this.phoneEl.textContent = t), e === "orgnr" && (this.orgnrEl.textContent = t);
   }
   connectedCallback() {
     this.adresseEl.dataset.mapurl && (this.adresseEl.innerHTML = `<a href="${this.adresseEl.dataset.mapurl}">${this.adresseEl.textContent}</a>`);
@@ -1376,14 +1391,15 @@ class ce extends HTMLElement {
   disconnectedCallback() {
   }
 }
-const j = "miles-contact-card";
-customElements.get(j) || customElements.define(j, ce);
-const he = "", ft = document.createElement("template");
-ft.innerHTML = `
+const I = "miles-contact-card";
+customElements.get(I) || customElements.define(I, ct);
+const ht = `:host{display:inline-block}::slotted(nav){z-index:2000;position:relative;top:calc(var(--header-height) * -1)}#menu-content{display:none;position:absolute;height:fit-content;background-color:var(--miles_primary_dark);z-index:2000;top:calc(var(--header-height) - 1px);right:0;transform:translate(500px);transition:transform .5s cubic-bezier(.46,.03,.52,.96);padding:0 2rem 2rem}@media screen and (min-width: 768px){#menu-content{padding:0 6rem 6rem}}#menu-content.open{transform:translate(0);display:block;right:0}#nav-icon{display:inline-block;z-index:2000;right:2rem;top:1rem;margin-left:auto;margin-right:auto;width:40px;height:40px;position:absolute;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0);-webkit-transition:.25s ease-in-out;-moz-transition:.25s ease-in-out;-o-transition:.25s ease-in-out;transition:.25s ease-in-out;cursor:pointer}#nav-icon span{display:block;position:absolute;height:5px;width:40px;left:0;background:#ffffff;border-radius:2px;opacity:1;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0);-webkit-transition:.25s ease-in-out;-moz-transition:.25s ease-in-out;-o-transition:.25s ease-in-out;transition:.25s ease-in-out}.mega-menu-open #nav-icon span{background:#fff}.fixed #nav-icon span{background:black}.mega-menu-open .fixed #nav-icon span{background:#fff}@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm){.fixed #nav-icon span{background:#ffffff}}#nav-icon span:nth-child(1){top:17px}#nav-icon span:nth-child(2),#nav-icon span:nth-child(3){top:4px}#nav-icon span:nth-child(4){top:31px}.open-menu span:nth-child(1){top:16px;width:0%;left:50%}.open-menu span:nth-child(2){top:1em;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}.open-menu span:nth-child(3){top:1em;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)}.open-menu span:nth-child(4){top:18px;width:0%;left:50%}ul{padding:0;list-style-type:none;margin:0}h3,h2{color:var(--miles_primary_light);font-size:1.5rem;font-weight:700;margin:2rem 0 1rem;padding:0}a{text-decoration:none;color:var(--miles_primary_light);padding:.2rem}a:hover,a:focus,a:active{background-color:var(--miles_link_color_hover)}.mega-menu-grid{display:flex;flex-direction:column}@media screen and (max-width: 900px) and (orientation: landscape){.mega-menu-grid{display:grid;grid-template-columns:repeat(3,1fr)}}ul.menu{display:flex;flex-direction:column;gap:.5rem}
+`, ve = document.createElement("template");
+ve.innerHTML = `
         <style>
-          	${he}
+          	${ht}
 
-           ${l}
+           ${r}
         </style>
         <div id="menu">
   				<div id="nav-icon" class="menu-toggle-icon">
@@ -1396,22 +1412,22 @@ ft.innerHTML = `
     			<slot></slot>
         </div>  
       `;
-class me extends HTMLElement {
+class mt extends HTMLElement {
   constructor() {
     super();
-    a(this, "handleKeys", (s) => {
-      s.keyCode === 13 && this.openmenu(s, !0);
+    a(this, "handleKeys", (i) => {
+      i.keyCode === 13 && this.openmenu(i, !0);
     });
-    a(this, "openmenu", (s, e) => {
-      s.preventDefault();
-      const i = this.burgerEl.getAttribute("aria-expanded") === "true" || !1;
-      this.burgerEl.setAttribute("aria-expanded", !i), this.burgerEl.classList.toggle("open-menu"), this.menuContent.classList.toggle("open"), !i && e && this.menuContent.querySelector("a").focus();
+    a(this, "openmenu", (i, t) => {
+      i.preventDefault();
+      const o = this.burgerEl.getAttribute("aria-expanded") === "true" || !1;
+      this.burgerEl.setAttribute("aria-expanded", !o), this.burgerEl.classList.toggle("open-menu"), this.menuContent.classList.toggle("open"), !o && t && this.menuContent.querySelector("a").focus();
     });
-    a(this, "closemenu", (s) => {
-      s.preventDefault(), (this.burgerEl.getAttribute("aria-expanded") === "true" || !1) && (this.burgerEl.setAttribute("aria-expanded", !1), this.burgerEl.classList.remove("open-menu"), this.menuContent.classList.remove("open"), this.burgerEl.focus());
+    a(this, "closemenu", (i) => {
+      i.preventDefault(), (this.burgerEl.getAttribute("aria-expanded") === "true" || !1) && (this.burgerEl.setAttribute("aria-expanded", !1), this.burgerEl.classList.remove("open-menu"), this.menuContent.classList.remove("open"), this.burgerEl.focus());
     });
-    const s = this.attachShadow({ mode: "open" });
-    s.append(ft.content.cloneNode(!0)), this.burgerEl = s.querySelector("#nav-icon"), this.menuContent = s.querySelector("#menu-content"), this.burgerEl.setAttribute("tabindex", "0"), this.burgerEl.setAttribute("role", "button"), this.burgerEl.setAttribute("aria-haspopup", "true"), this.burgerEl.setAttribute("aria-expanded", "false"), this.burgerEl.setAttribute("aria-label", "Meny");
+    const i = this.attachShadow({ mode: "open" });
+    i.append(ve.content.cloneNode(!0)), this.burgerEl = i.querySelector("#nav-icon"), this.menuContent = i.querySelector("#menu-content"), this.burgerEl.setAttribute("tabindex", "0"), this.burgerEl.setAttribute("role", "button"), this.burgerEl.setAttribute("aria-haspopup", "true"), this.burgerEl.setAttribute("aria-expanded", "false"), this.burgerEl.setAttribute("aria-label", "Meny");
   }
   /*
     static get observedAttributes() {
@@ -1423,26 +1439,27 @@ class me extends HTMLElement {
     }
     */
   connectedCallback() {
-    this.shadowRoot.querySelector("slot").assignedElements().forEach((e) => {
-      e.tagName === "NAV" && (e.querySelector('a[href="#"]') && e.querySelector('a[href="#"]').remove(), this.menuContent.append(e));
+    this.shadowRoot.querySelector("slot").assignedElements().forEach((t) => {
+      t.tagName === "NAV" && (t.querySelector('a[href="#"]') && t.querySelector('a[href="#"]').remove(), this.menuContent.append(t));
     }), this.burgerEl.addEventListener("keydown", this.handleKeys), this.burgerEl.addEventListener("click", this.openmenu);
-    function s(e) {
-      e.key === "Escape" && this.closemenu(e);
+    function i(t) {
+      t.key === "Escape" && this.closemenu(t);
     }
-    window.addEventListener("keydown", s);
+    window.addEventListener("keydown", i);
   }
   disconnectedCallback() {
     this.burgerEl.removeEventListener("click", this.openmenu);
   }
 }
-const D = "miles-site-menu";
-customElements.get(D) || customElements.define(D, me);
-const ue = "", bt = document.createElement("template");
-bt.innerHTML = `
+const F = "miles-site-menu";
+customElements.get(F) || customElements.define(F, mt);
+const pt = `:host{color:var(--miles_primary_light);width:100%;max-width:1140px;display:inline-block;margin-bottom:1em}.podcast-card{background-color:var(--miles_secondary_four);padding:2.2em;display:flex;flex-direction:column;gap:2.2em;border-radius:30px;overflow:hidden}@media (min-width: 768px){.podcast-card{flex-direction:row}}.bg{flex-grow:1}#title{margin:0;font-size:1.5em;font-weight:700}#date{padding:0;margin:0;font-size:.8em}#title:before{content:attr(data-episode);margin-right:.5em}.image{box-sizing:border-box;flex-direction:row;height:156px;width:156px;background-color:#fff;padding:.5rem;border-radius:10px;display:flex;align-items:center}.text{margin-top:1em}
+`, we = document.createElement("template");
+we.innerHTML = `
       <style>
-      	${ue}
+      	${pt}
 
-        ${l}
+        ${r}
         </style>
         <div class="podcast-card">
         <div class="image">
@@ -1479,18 +1496,18 @@ bt.innerHTML = `
         </div>
         </div>
         `;
-class pe extends HTMLElement {
+class gt extends HTMLElement {
   constructor() {
     super();
-    a(this, "timeFormat", (s) => new Intl.DateTimeFormat("no", {
+    a(this, "timeFormat", (i) => new Intl.DateTimeFormat("no", {
       month: "short",
       day: "numeric"
-    }).format(s));
-    a(this, "createPlayer", (s) => {
-      const e = document.createElement("miles-audio-player");
-      return e.setAttribute("src", s), e;
+    }).format(i));
+    a(this, "createPlayer", (i) => {
+      const t = document.createElement("miles-audio-player");
+      return t.setAttribute("src", i), t;
     });
-    this.attachShadow({ mode: "open" }).appendChild(bt.content.cloneNode(!0)), this.titlEl = this.shadowRoot.querySelector("#title"), this.dateEl = this.shadowRoot.querySelector("#date"), this.summaryEl = this.shadowRoot.querySelector("#summary"), this.descriptionEl = this.shadowRoot.querySelector("#description"), this.playerEl = this.shadowRoot.querySelector("#player");
+    this.attachShadow({ mode: "open" }).appendChild(we.content.cloneNode(!0)), this.titlEl = this.shadowRoot.querySelector("#title"), this.dateEl = this.shadowRoot.querySelector("#date"), this.summaryEl = this.shadowRoot.querySelector("#summary"), this.descriptionEl = this.shadowRoot.querySelector("#description"), this.playerEl = this.shadowRoot.querySelector("#player");
   }
   static get observedAttributes() {
     return [
@@ -1502,19 +1519,20 @@ class pe extends HTMLElement {
       "url"
     ];
   }
-  attributeChangedCallback(s, e, i) {
-    s === "episode_number" && this.titlEl.setAttribute("data-episode", `#${i}`), s === "episode_title" && (this.titlEl.textContent = i), s === "published_date" && (this.dateEl.textContent = `${this.timeFormat(
-      new Date(i)
-    )} - MilesPodden`), s === "description" && (this.descriptionEl.textContent = i), s === "url" && this.playerEl.appendChild(this.createPlayer(i));
+  attributeChangedCallback(i, t, o) {
+    i === "episode_number" && this.titlEl.setAttribute("data-episode", `#${o}`), i === "episode_title" && (this.titlEl.textContent = o), i === "published_date" && (this.dateEl.textContent = `${this.timeFormat(
+      new Date(o)
+    )} - MilesPodden`), i === "description" && (this.descriptionEl.textContent = o), i === "url" && this.playerEl.appendChild(this.createPlayer(o));
   }
 }
 const O = "miles-podcast-card";
-customElements.get(O) || customElements.define(O, pe);
-const ge = "", Et = document.createElement("template");
-Et.innerHTML = `
+customElements.get(O) || customElements.define(O, gt);
+const ut = `:host{display:inline-block;overflow:hidden;width:100%}*,*:before,*:after{box-sizing:border-box}.banner{background-color:var(--miles_primary_light);display:flex;height:clamp(360px,70vh,800px);position:relative}.banner.reverse{flex-direction:row-reverse}.banner__image{background-position:center;background-repeat:no-repeat;background-size:cover;flex:0 0 100%;height:100%}@media (min-width: 480px){.split .banner__image{flex-basis:50%}}.banner__content{bottom:0;display:flex;flex-direction:column;justify-content:center;padding:2rem;position:absolute;width:100%;z-index:1}.banner__content:before{background-color:var(--miles_primary_light);content:"";height:100%;left:0;opacity:.7;position:absolute;top:0;width:100%;z-index:0}.banner__content h1,.banner__content p{color:var(--miles_secondary_four);line-height:120%;margin-bottom:0;margin-left:0;max-width:100%;padding:0;position:relative;z-index:1}@media (min-width: 900px){.banner__content h1,.banner__content p{max-width:50%}}.banner__content h1{font-size:32px;line-height:120%;margin-top:0}@media (min-width: 900px){.banner__content h1{font-size:48px}}.banner__content p{font-size:1.5rem;margin-top:0}@media (min-width: 900px){.banner__content p{font-size:2rem;margin-top:1rem}}@media (min-width: 480px){.split .banner__content{background:none;filter:none;flex-basis:50%;height:100%;justify-content:center;position:relative}.split .banner__content h1{max-width:80%}}
+`, ye = document.createElement("template");
+ye.innerHTML = `
 	<style>
-		${ge}
-		${l}
+		${ut}
+		${r}
 	</style>
 	<div class="banner">
 		<div class="banner__content">
@@ -1524,27 +1542,28 @@ Et.innerHTML = `
 		<div class="banner__image"></div>
 	</div>
 `;
-class ve extends HTMLElement {
+class ft extends HTMLElement {
   constructor() {
     super();
-    const t = this.attachShadow({ mode: "open" });
-    t.appendChild(Et.content.cloneNode(!0)), this.banner = t.querySelector(".banner"), this.bannerImage = t.querySelector(".banner__image"), this.titleEl = t.querySelector("#title"), this.sloganEl = t.querySelector("#slogan");
+    const e = this.attachShadow({ mode: "open" });
+    e.appendChild(ye.content.cloneNode(!0)), this.banner = e.querySelector(".banner"), this.bannerImage = e.querySelector(".banner__image"), this.titleEl = e.querySelector("#title"), this.sloganEl = e.querySelector("#slogan");
   }
   static get observedAttributes() {
     return ["image", "title", "slogan", "variant", "reverse"];
   }
-  attributeChangedCallback(t, s, e) {
-    t === "image" && (this.bannerImage.style.backgroundImage = `url(${e})`), t === "title" && (this.titleEl.textContent = e), t === "slogan" && (this.sloganEl.textContent = e), t === "reverse" && e === "true" && this.banner.classList.add("reverse"), t === "variant" && e === "split" && this.banner.classList.add("split");
+  attributeChangedCallback(e, i, t) {
+    e === "image" && (this.bannerImage.style.backgroundImage = `url(${t})`), e === "title" && (this.titleEl.textContent = t), e === "slogan" && (this.sloganEl.textContent = t), e === "reverse" && t === "true" && this.banner.classList.add("reverse"), e === "variant" && t === "split" && this.banner.classList.add("split");
   }
 }
-const Q = "miles-banner";
-customElements.get(Q) || customElements.define(Q, ve);
-const Ce = "", yt = document.createElement("template");
-yt.innerHTML = `
+const D = "miles-banner";
+customElements.get(D) || customElements.define(D, ft);
+const bt = `:host{--player-height: 64px;display:inline-block;width:100%}#milesplayer{align-items:center;display:flex;flex-direction:column;gap:1em;background-color:var(--miles_secondary_four);width:100%}@media (min-width: 768px){#milesplayer{flex-direction:row;height:var(--player-height)}}.end,.start{width:100%;display:flex;flex-direction:row;align-items:center;gap:.5em}.end{flex-shrink:3}@media (min-width: 768px){.end,.start{width:100%;display:flex;flex-direction:row;align-items:center;justify-content:flex-start}}miles-play,miles-pause{display:flex;align-items:center;height:var(--player-height);width:var(--player-height)}miles-seek{display:flex;align-items:center}#progresstime{color:var(--miles_primary_light);white-space:nowrap;min-width:100px;flex-grow:1}@media (min-width: 768px){#progresstime{flex-grow:initial}}button{border:0;appearance:none;display:flex;height:var(--player-height);align-items:center;background:transparent}audio{appearance:none;display:none}.progress-indicator{width:100%}input[type=range]{-webkit-appearance:none;margin-right:15px;width:100%;height:10px;background:var(--miles_primary_light);border-radius:5px;background-image:linear-gradient(var(--miles_primary_dark),var(--miles_primary_dark));background-size:70% 100%;background-repeat:no-repeat}#progressbar::-webkit-slider-thumb{visibility:hidden!important}#progressbar::-webkit-slider-thumb,#progressbar::-moz-range-thumb,#progressbar::-ms-thumb{-webkit-appearance:none;height:0px;width:0px;border-radius:0%;background:var(--miles_primary_dark);cursor:ew-resize;box-shadow:0 0 2px #555;transition:background .3s ease-in-out}#progressbar::-webkit-slider-runnable-track,#progressbar::-moz-range-track,#progressbar::-ms-track{-webkit-appearance:none;box-shadow:none;border:none;background:transparent}
+`, xe = document.createElement("template");
+xe.innerHTML = `
   <style>
-	${Ce}
+	${bt}
 
-  ${l}
+  ${r}
     </style>
 	<div id="milesplayer">
 		<audio id="player" crossorigin controls></audio>
@@ -1561,14 +1580,14 @@ yt.innerHTML = `
     </div>
 	</div>
 `;
-class fe extends HTMLElement {
+class vt extends HTMLElement {
   constructor() {
     super();
-    a(this, "forwardSeek", (s) => {
-      this.audioPlayerEl.currentTime = this.audioPlayerEl.currentTime + s;
+    a(this, "forwardSeek", (i) => {
+      this.audioPlayerEl.currentTime = this.audioPlayerEl.currentTime + i;
     });
-    a(this, "backwardSeek", (s) => {
-      this.audioPlayerEl.currentTime = this.audioPlayerEl.currentTime - s;
+    a(this, "backwardSeek", (i) => {
+      this.audioPlayerEl.currentTime = this.audioPlayerEl.currentTime - i;
     });
     a(this, "timeUpdateHandler", () => {
       this.progresstimeEl.textContent = `${this.getTimeString(
@@ -1585,24 +1604,24 @@ class fe extends HTMLElement {
     });
     a(this, "updateProgress", () => {
       console.log("progress");
-      let s = this.progressbarEl;
-      const e = 0, i = s.max || 100, r = this.audioPlayerEl.currentTime;
-      s.style.backgroundSize = (r - e) * 100 / (i - e) + "% 100%";
+      let i = this.progressbarEl;
+      const t = 0, o = i.max || 100, n = this.audioPlayerEl.currentTime;
+      i.style.backgroundSize = (n - t) * 100 / (o - t) + "% 100%";
     });
     a(this, "play", () => {
       this.audioContext.state === "suspended" && this.audioContext.resume(), this.playButtonEl.dataset.playing === "false" ? (this.audioPlayerEl.play(), this.playButtonEl.dataset.playing = "true", this.playButtonEl.innerHTML = "<miles-pause></miles-pause>", this.playButtonEl.setAttribute("aria-label", "pause")) : this.playButtonEl.dataset.playing === "true" && (this.audioPlayerEl.pause(), this.playButtonEl.dataset.playing = "false", this.playButtonEl.innerHTML = "<miles-play></miles-play>", this.playButtonEl.setAttribute("aria-label", "play"));
     });
-    this.attachShadow({ mode: "open" }), this.shadowRoot.append(yt.content.cloneNode(!0)), this.audioEl = this.shadowRoot.querySelector("#milesplayer"), this.audioPlayerEl = this.shadowRoot.querySelector("#player"), this.playButtonEl = this.shadowRoot.querySelector("#play"), this.progresstimeEl = this.shadowRoot.querySelector("#progresstime"), this.progressbarEl = this.shadowRoot.querySelector("#progressbar"), this.backwardSeekEl = this.shadowRoot.querySelector("#backward"), this.forwardSeekEl = this.shadowRoot.querySelector("#forward"), this.audioContext;
+    this.attachShadow({ mode: "open" }), this.shadowRoot.append(xe.content.cloneNode(!0)), this.audioEl = this.shadowRoot.querySelector("#milesplayer"), this.audioPlayerEl = this.shadowRoot.querySelector("#player"), this.playButtonEl = this.shadowRoot.querySelector("#play"), this.progresstimeEl = this.shadowRoot.querySelector("#progresstime"), this.progressbarEl = this.shadowRoot.querySelector("#progressbar"), this.backwardSeekEl = this.shadowRoot.querySelector("#backward"), this.forwardSeekEl = this.shadowRoot.querySelector("#forward"), this.audioContext;
   }
   static get observedAttributes() {
     return ["src"];
   }
-  attributeChangedCallback(s, e, i) {
-    s === "src" && (this.audioPlayerEl.src = i);
+  attributeChangedCallback(i, t, o) {
+    i === "src" && (this.audioPlayerEl.src = o);
   }
   connectedCallback() {
-    const s = window.AudioContext || window.webkitAudioContext;
-    this.audioContext = new s(), this.audioContext.createMediaElementSource(
+    const i = window.AudioContext || window.webkitAudioContext;
+    this.audioContext = new i(), this.audioContext.createMediaElementSource(
       this.audioPlayerEl
     ).connect(this.audioContext.destination), this.playButtonEl.addEventListener("click", this.play), this.audioPlayerEl.addEventListener("timeupdate", this.timeUpdateHandler), this.audioPlayerEl.addEventListener(
       "loadedmetadata",
@@ -1618,15 +1637,15 @@ class fe extends HTMLElement {
       this.progressChangeHandler
     );
   }
-  getTimeString(s) {
-    if (isNaN(s))
+  getTimeString(i) {
+    if (isNaN(i))
       return "00:00";
-    const e = `${parseInt(`${s % 60}`, 10)}`.padStart(2, "0");
-    return `${parseInt(`${s / 60 % 60}`, 10)}:${e}`;
+    const t = `${parseInt(`${i % 60}`, 10)}`.padStart(2, "0");
+    return `${parseInt(`${i / 60 % 60}`, 10)}:${t}`;
   }
 }
-const z = "miles-audio-player";
-customElements.get(z) || customElements.define(z, fe);
+const Q = "miles-audio-player";
+customElements.get(Q) || customElements.define(Q, vt);
 
 //# sourceMappingURL=miles-wc.es.js.map
 
