@@ -1,5 +1,8 @@
+import blockInfo from "./block.json";
+
 const { InspectorControls, InnerBlocks,MediaUpload, MediaUploadCheck, useBlockProps , useInnerBlocksProps } = wp.blockEditor;
 const { Button, PanelBody, PanelRow, ResponsiveWrapper, TextControl } = wp.components;
+const { serverSideRender: ServerSideRender } = wp;
 const { Fragment } = wp.element;
 const { compose } = wp.compose;
 const { withSelect } = wp.data;
@@ -15,6 +18,10 @@ const BlockEdit = (props) => {
 			bannerHeading: heading,
 		} );
 	};
+
+	const changeId = (changedId) => {
+		setAttributes({id: changedId});
+	}
 
 	const onSelectMedia = (media) => {
 		props.setAttributes({
@@ -37,6 +44,9 @@ const BlockEdit = (props) => {
 					title={__('Select banner image', 'miles-office-banner')}
 					initialOpen={ true }
 				>
+					<PanelRow>
+						<TextControl label="id" onChange={changeId} value={attributes.id}/>
+					</PanelRow>
 					<PanelRow>
 						<TextControl label="Banner heading" onChange={changeHeading} value={attributes.bannerHeading}/>
 					</PanelRow>
@@ -86,6 +96,7 @@ const BlockEdit = (props) => {
 
 					<div {...useInnerBlocksProps()} />
 				</InnerBlocks>
+				<ServerSideRender block={blockInfo.name} attributes={attributes}   />
 			</div>
 		</Fragment>
 	);

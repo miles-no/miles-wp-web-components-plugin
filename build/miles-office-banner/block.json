@@ -8,8 +8,12 @@
   "icon": "layout",
   "description": "Banner block for Miles offices.",
   "attributes": {
-    "bannerHeading": {
+    "id": {
       "type": "string"
+    },
+    "bannerHeading": {
+      "type": "string",
+      "default": ""
     },
     "bannerImageId": {
       "type": "number",

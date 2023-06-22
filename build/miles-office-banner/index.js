@@ -14,7 +14,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var miles_wc_public_miles_wc_es__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! miles-wc/public/miles-wc.es */ "./node_modules/miles-wc/public/miles-wc.es.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block.json */ "./src/miles-office-banner/block.json");
+/* harmony import */ var miles_wc_public_miles_wc_es__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! miles-wc/public/miles-wc.es */ "./node_modules/miles-wc/public/miles-wc.es.js");
+
 
 const {
   InspectorControls,
@@ -31,6 +33,9 @@ const {
   ResponsiveWrapper,
   TextControl
 } = wp.components;
+const {
+  serverSideRender: ServerSideRender
+} = wp;
 const {
   Fragment
 } = wp.element;
@@ -54,6 +59,11 @@ const BlockEdit = props => {
       bannerHeading: heading
     });
   };
+  const changeId = changedId => {
+    setAttributes({
+      id: changedId
+    });
+  };
   const onSelectMedia = media => {
     props.setAttributes({
       mediaId: media.id,
@@ -70,6 +80,10 @@ const BlockEdit = props => {
     title: __('Select banner image', 'miles-office-banner'),
     initialOpen: true
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(TextControl, {
+    label: "id",
+    onChange: changeId,
+    value: attributes.id
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(TextControl, {
     label: "Banner heading",
     onChange: changeHeading,
     value: attributes.bannerHeading
@@ -104,7 +118,10 @@ const BlockEdit = props => {
     isDestructive: true
   }, __('Remove banner image', 'miles-blocks')))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "wp-block-miles-blocks-miles-office-banner"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(InnerBlocks, useBlockProps(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", useInnerBlocksProps()))));
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(InnerBlocks, useBlockProps(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", useInnerBlocksProps())), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ServerSideRender, {
+    block: _block_json__WEBPACK_IMPORTED_MODULE_1__.name,
+    attributes: attributes
+  })));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (withSelect((select, props) => {
   return {
@@ -1658,7 +1675,7 @@ customElements.get(Q) || customElements.define(Q, vt);
   \********************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"miles-blocks/miles-office-banner","version":"0.1.0","title":"Office Banner","category":"widgets","icon":"layout","description":"Banner block for Miles offices.","attributes":{"bannerHeading":{"type":"string"},"bannerImageId":{"type":"number","default":0},"mediaId":{"type":"number","default":0},"mediaUrl":{"type":"string","default":""}},"supports":{"html":false},"textdomain":"miles-office-banner","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"miles-blocks/miles-office-banner","version":"0.1.0","title":"Office Banner","category":"widgets","icon":"layout","description":"Banner block for Miles offices.","attributes":{"id":{"type":"string"},"bannerHeading":{"type":"string","default":""},"bannerImageId":{"type":"number","default":0},"mediaId":{"type":"number","default":0},"mediaUrl":{"type":"string","default":""}},"supports":{"html":false},"textdomain":"miles-office-banner","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ })
 

@@ -12,6 +12,7 @@ foreach ($attributes as $key=>$value){
 		$attributestring .=  'city="' . $value .'" ';
 		continue;
 	}
+	$attributestring .=  $key . '="' . $value .'" ';
 }
 
 ?>
