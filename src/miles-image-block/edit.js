@@ -43,6 +43,8 @@ export default function Edit({attributes, setAttributes	}) {
 								</Button>
 							)}
 						/>
+					</PanelRow>
+					<PanelRow>
 						<TextControl
 							label="Enter image description"
 							value={attributes.alt}
