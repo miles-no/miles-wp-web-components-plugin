@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "miles-blocks/miles-image-block",
+  "version": "0.1.0",
+  "title": "Miles Image Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "image": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "background": {
+      "type": "string"
+    },
+    "reverse": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "button": {
+      "type": "string"
+    }
+  },
+  "textdomain": "miles-image-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
