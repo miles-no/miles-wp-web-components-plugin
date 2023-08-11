@@ -40,29 +40,18 @@ wp_enqueue_script( 'miles_2020-wc',
 	filemtime( get_template_directory() . '/js/miles-wc.es.js' ), true
 );
 
-
-// Add City menu image
-
-add_filter( 'wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2 );
-
-function my_wp_nav_menu_objects( $items, $args ) {
-
-	// loop
-	foreach ( $items as &$item ) {
-
-		// vars
-		$image = get_field( 'image', $item );
-		$size  = 'feature-image';
-		// append icon
-		if ( $image ) {
-			$item->title .= '<figure class="city-menu-image">' . wp_get_attachment_image( $image, $size ) . '</figure>';
-		}
+/** Add type attribute  */
+add_filter( 'script_loader_tag', 'add_type_attribute', 10, 3 );
+function add_type_attribute( $tag, $handle, $src ) {
+	// if not our script, do nothing and return original $tag
+	if ( 'miles_2020-wc' !== $handle ) {
+		return $tag;
 	}
 
-	// return
-	return $items;
-
+	// change the script tag by adding type="module" and return it.
+	return '<script type="module" src="' . esc_url( $src ) . '"></script>';
 }
+
 
 add_filter( 'render_block', 'miles_wrap_gallery', 10, 3 );
 
