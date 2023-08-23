@@ -11,13 +11,8 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-
-import { InnerBlocks, useBlockProps,useInnerBlocksProps } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 import {Panel, PanelBody, PanelRow, TextControl,TextareaControl, SelectControl} from '@wordpress/components';
-import ServerSideRender from '@wordpress/server-side-render';
-import { useState } from '@wordpress/element';
-import {MilesInfoBlock} from "miles-wc/public/miles-wc.es";
-
 
 
 /**
@@ -27,7 +22,6 @@ import {MilesInfoBlock} from "miles-wc/public/miles-wc.es";
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import './editor.scss';
-import blockInfo from './block.json';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -39,16 +33,18 @@ import blockInfo from './block.json';
  */
 export default function Edit({attributes, setAttributes	}) {
 
+	const ALLOWED_BLOCKS = ['core/paragraph'];
+
+	const TEMPLATE = [
+		['core/paragraph', {placeholder: 'Add your content here'}]
+	];
+
 	function changeId(changedId) {
 		setAttributes({id: changedId});
 	}
 
 	function changeHeading(changedHeading) {
 		setAttributes({heading: changedHeading});
-	}
-
-	function changeText(changedText) {
-		setAttributes({text: changedText});
 	}
 
 	return (
@@ -64,20 +60,19 @@ export default function Edit({attributes, setAttributes	}) {
 						<PanelRow>
 							<TextControl label="Heading" onChange={changeHeading} value={attributes.heading}/>
 						</PanelRow>
-						<PanelRow>
-							<TextareaControl label="text" onChange={changeText} value={attributes.text}/>
-						</PanelRow>
+
 					</PanelBody>
 
 				</Panel>
 			</InspectorControls>
 			<div className="wp-block-miles-blocks-miles-info-block">
-				<InnerBlocks {...useBlockProps()}>
-
-					<div {...useInnerBlocksProps()} />
-				</InnerBlocks>
+				<miles-info-block heading={attributes.heading} id={attributes.id} >
+					<InnerBlocks
+						allowedBlocks={ALLOWED_BLOCKS}
+						template={TEMPLATE}
+					/>
+				</miles-info-block>
 			</div>
-			<ServerSideRender skipBlockSupportAttributes  block={blockInfo.name} attributes={attributes} />
 		</section>
 	);
 }

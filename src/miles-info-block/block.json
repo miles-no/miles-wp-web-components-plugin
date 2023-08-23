@@ -6,7 +6,6 @@
 	"title": "Miles info block",
 	"category": "widgets",
 	"icon": "text",
-	"description": "Info block with heading and text circumvented by a rounded border.",
 	"supports": {
 		"html": false
 	},
@@ -16,14 +15,10 @@
 		},
 		"heading": {
 			"type": "string"
-		},
-		"text": {
-			"type": "string"
 		}
 	},
-	"textdomain": "miles-info-block",
+	"textdomain": "miles-blocks",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
-	"style": "file:./style-index.css",
-	"render": "file:./render.php"
+	"style": "file:./style-index.css"
 }

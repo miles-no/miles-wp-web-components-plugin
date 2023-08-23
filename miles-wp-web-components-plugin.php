@@ -13,6 +13,7 @@
  * @package           create-block
  */
 
+register_block_type( __DIR__ . '/build/miles-banner' );
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
  * Behind the scenes, it registers also all assets so they can be enqueued
@@ -21,12 +22,11 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function create_block_miles_editor_blocks_block_init(): void {
-	register_block_type( __DIR__ . '/build/miles-banner' );
-	register_block_type( __DIR__ . '/build/miles-business-card' );
+	register_block_type( __DIR__ . '/build/miles-info-block' );
 	register_block_type( __DIR__ . '/build/miles-button-anchor' );
+	register_block_type( __DIR__ . '/build/miles-business-card' );
 	register_block_type( __DIR__ . '/build/miles-contact-card' );
 	register_block_type( __DIR__ . '/build/miles-image-block' );
-	register_block_type( __DIR__ . '/build/miles-info-block' );
 	register_block_type( __DIR__ . '/build/miles-office-banner' );
 
 }
@@ -35,9 +35,12 @@ add_action( 'init', 'create_block_miles_editor_blocks_block_init' );
 
 
 wp_enqueue_script( 'miles_2020-wc',
-	get_template_directory_uri() . '/js/miles-wc.es.js',
+	#plugin_dir_url( __FILE__ ) . '/miles-wc/miles-wc.es.js',
+	plugin_dir_url( __FILE__ ) . 'miles-wc-new/miles-wc.es.js',
+	#get_template_directory_uri() . '/js/miles-wc.es.js',
 	array(),
-	filemtime( get_template_directory() . '/js/miles-wc.es.js' ), true
+#filemtime( plugin_dir_url( __FILE__ ) . '/miles-wc/miles-wc.es.js' ), true
+#filemtime( 'miles-wc-new.es.js' ), true
 );
 
 /** Add type attribute  */
@@ -113,3 +116,28 @@ function miles_overlap_block( $block_content, $block ) {
 		return $block_content;
 	}
 }
+
+##### Miles Limes #####
+
+include_once "miles-limes/miles_limes.php";
+
+/**
+ * Add custom short codes
+ */
+include_once 'miles-limes/shortcodes.php';
+
+if ( function_exists( 'register_shortcodes' ) ) {
+	add_action( 'init', 'register_shortcodes' );
+} else {
+	echo "shortcode functions are not available.<br />\n";
+}
+
+/**
+ * enable use of shortcodes in php files
+ */
+add_filter( 'widget_text', 'do_shortcode' );
+
+
+### Nyhetssaker ###
+
+include_once 'nyheter/nyheter.php';
