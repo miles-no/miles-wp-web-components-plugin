@@ -22,6 +22,7 @@ register_block_type( __DIR__ . '/build/miles-banner' );
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function create_block_miles_editor_blocks_block_init(): void {
+	register_block_type( __DIR__ . '/build/miles-banner' );
 	register_block_type( __DIR__ . '/build/miles-info-block' );
 	register_block_type( __DIR__ . '/build/miles-button-anchor' );
 	register_block_type( __DIR__ . '/build/miles-business-card' );
