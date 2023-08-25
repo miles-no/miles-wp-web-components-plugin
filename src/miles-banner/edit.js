@@ -61,9 +61,6 @@ const BlockEdit = (props) => {
 					<PanelRow>
 						<TextControl label="Banner title" onChange={changeTitle} value={attributes.title}/>
 					</PanelRow>
-					<PanelRow>
-						<TextControl label="Banner slogan" onChange={changeSlogan} value={attributes.slogan}/>
-					</PanelRow>
 					<PanelRow className="editor-post-featured-image">
 						<MediaUploadCheck>
 							<MediaUpload
@@ -105,7 +102,13 @@ const BlockEdit = (props) => {
 					</PanelRow>
 				</PanelBody>
 			</InspectorControls>
-			<ServerSideRender skipBlockSupportAttributes  block={blockInfo.name} attributes={attributes} />
+			<div className="wp-block-miles-blocks-miles-office-banner">
+				<ServerSideRender block={blockInfo.name} attributes={attributes}   />
+				<InnerBlocks {...useBlockProps()}>
+
+					<div {...useInnerBlocksProps()} />
+				</InnerBlocks>
+			</div>
 		</Fragment>
 	);
 };
