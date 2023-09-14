@@ -27,6 +27,10 @@
 			"type": "number",
 			"default": 0
 		},
+		"icon": {
+			"type": "string",
+			"default": ""
+		},
 		"mediaUrl": {
 			"type": "string",
 			"default": ""

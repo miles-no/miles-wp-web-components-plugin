@@ -25,6 +25,11 @@ const BlockEdit = (props) => {
 			slogan: newSlogan,
 		} );
 	};
+	const changeIcon = ( newIcon ) => {
+		setAttributes( {
+			icon: newIcon,
+		} );
+	};
 	const onSelectMedia = (media) => {
 		props.setAttributes({
 			mediaId: media.id,
@@ -60,6 +65,9 @@ const BlockEdit = (props) => {
 					</PanelRow>
 					<PanelRow>
 						<TextControl label="Banner title" onChange={changeTitle} value={attributes.title}/>
+					</PanelRow>
+					<PanelRow>
+						<TextControl label="Icon element" onChange={changeIcon} value={attributes.icon}/>
 					</PanelRow>
 					<PanelRow className="editor-post-featured-image">
 						<MediaUploadCheck>
