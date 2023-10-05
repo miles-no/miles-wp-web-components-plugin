@@ -13,4 +13,4 @@ foreach ( $attributes as $key => $value ) {
 }
 
 
-echo '<miles-banner ' . $attributestring . '><slot>' . $content . '</slot></miles-banner>'; ?>
+echo '<miles-banner ' . $attributestring . '>'. $content . '</miles-banner>'; ?>
