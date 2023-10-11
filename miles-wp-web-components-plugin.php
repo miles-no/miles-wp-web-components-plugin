@@ -77,26 +77,6 @@ function miles_wrap_gallery( $block_content, $block ) {
 	}
 }
 
-
-add_filter( 'render_block', 'miles_fagblogg_teaser', 10, 3 );
-
-function miles_fagblogg_teaser( $block_content, $block ) {
-
-	if ( "core/latest-posts" !== $block['blockName'] ) {
-		return $block_content;
-	}
-
-	if ( str_contains( $block['attrs']['className'], 'miles-fagblogg-teaser' ) ) {
-		$output = '<miles-fagblogg-teaser>';
-		$output .= $block_content;
-		$output .= '</miles-fagblogg-teaser>';
-
-		return $output;
-	} else {
-		return $block_content;
-	}
-}
-
 add_filter( 'render_block', 'miles_overlap_block', 10, 3 );
 
 function miles_overlap_block( $block_content, $block ) {
