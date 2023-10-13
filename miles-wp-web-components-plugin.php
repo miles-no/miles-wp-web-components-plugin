@@ -29,6 +29,7 @@ function create_block_miles_editor_blocks_block_init(): void {
 	register_block_type( __DIR__ . '/build/miles-contact-card' );
 	register_block_type( __DIR__ . '/build/miles-image-block' );
 	register_block_type( __DIR__ . '/build/miles-office-banner' );
+	register_block_type( __DIR__ . '/build/miles-fagblogg-teaser' );
 
 }
 
@@ -69,26 +70,6 @@ function miles_wrap_gallery( $block_content, $block ) {
 		$output = '<miles-image-slider inview="3" autoplay="true">';
 		$output .= $block_content;
 		$output .= '</miles-image-slider>';
-
-		return $output;
-	} else {
-		return $block_content;
-	}
-}
-
-
-add_filter( 'render_block', 'miles_fagblogg_teaser', 10, 3 );
-
-function miles_fagblogg_teaser( $block_content, $block ) {
-
-	if ( "core/latest-posts" !== $block['blockName'] ) {
-		return $block_content;
-	}
-
-	if ( str_contains( $block['attrs']['className'], 'miles-fagblogg-teaser' ) ) {
-		$output = '<miles-fagblogg-teaser>';
-		$output .= $block_content;
-		$output .= '</miles-fagblogg-teaser>';
 
 		return $output;
 	} else {
