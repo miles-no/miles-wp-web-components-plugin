@@ -30,7 +30,11 @@
         "displayFeaturedImage": {
             "type": "boolean",
             "default": true
-        }
+        },
+		"featuredImageSizeSlug": {
+			"enum": ["thumbnail", "medium", "large"],
+			"default": "medium"
+		  }
 	},
 	"textdomain": "miles-fagblogg-teaser",
 	"editorScript": "file:./index.js",
