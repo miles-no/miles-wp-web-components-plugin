@@ -10,7 +10,13 @@
     // latest post block
     $numberOfPosts = isset($attributes['numberOfPosts']) ? intval($attributes['numberOfPosts']) : 3;
     
-	$latestPostsBlock = '<!-- wp:latest-posts {"postsToShow":' . $numberOfPosts . ', "displayAuthor":' . ($attributes['displayAuthor'] ? 'true' : 'false') . ', "displayPostDate":' . ($attributes['displayPostDate'] ? 'true' : 'false') . ', "displayFeaturedImage":' . ($attributes['displayFeaturedImage'] ? 'true' : 'false') . '} /-->';
+	$latestPostsBlock = '<!-- wp:latest-posts {"postsToShow":' . $numberOfPosts . ', "displayAuthor":' . ($attributes['displayAuthor'] ? 'true' : 'false') . ', "displayPostDate":' . ($attributes['displayPostDate'] ? 'true' : 'false') . ', "displayFeaturedImage":' . ($attributes['displayFeaturedImage'] ? 'true' : 'false');
+
+    if (isset($attributes['featuredImageSizeSlug'])) {
+        $latestPostsBlock .= ', "featuredImageSizeSlug":"' . $attributes['featuredImageSizeSlug'] . '"';
+    }
+
+    $latestPostsBlock .= '} /-->';
 
     $parsedPosts = do_blocks($latestPostsBlock);
 
