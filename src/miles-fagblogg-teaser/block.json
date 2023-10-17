@@ -33,7 +33,7 @@
         },
 		"featuredImageSizeSlug": {
 			"enum": ["thumbnail", "medium", "large"],
-			"default": "medium"
+			"default": "large"
 		  }
 	},
 	"textdomain": "miles-fagblogg-teaser",
