@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "miles-blocks/miles-fagblogg-teaser",
+  "version": "0.1.0",
+  "title": "Miles Fagblogg Teaser Block",
+  "category": "widgets",
+  "icon": "index-card",
+  "description": "Fagblogg teaser block",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "link": {
+      "type": "string",
+      "default": "http://www.miles.no/milespodden"
+    },
+    "numberOfPosts": {
+      "type": "number",
+      "default": 3
+    },
+    "displayPostDate": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayAuthor": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayFeaturedImage": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "textdomain": "miles-fagblogg-teaser",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "render": "file:./render.php"
+}
