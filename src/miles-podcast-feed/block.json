@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "miles-blocks/miles-podcast-feed",
+	"version": "0.1.0",
+	"title": "Miles Podcast Feed",
+	"category": "widgets",
+	"icon": "index-card",
+	"description": "Podcast Feed from Milespodden",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"start": {
+            "type": "integer",
+            "default": 0
+        },
+        "end": {
+            "type": "integer",
+            "default": 5
+        }
+	},
+	"textdomain": "miles-podcast-feed",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
