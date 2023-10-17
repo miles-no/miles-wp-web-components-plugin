@@ -13,7 +13,7 @@ import { __ } from '@wordpress/i18n';
  */
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import ServerSideRender from '@wordpress/server-side-render';
-import { Panel, PanelBody, PanelRow, TextControl } from '@wordpress/components';
+import { Panel, PanelBody, PanelRow, TextControl, SelectControl} from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -39,6 +39,10 @@ export default function Edit({ attributes, setAttributes }) {
 
 	function changeNumberOfPosts(changedNumberOfPosts) {
 		setAttributes({ numberOfPosts: parseInt(changedNumberOfPosts, 10) });
+	}
+
+	function changeImageSize(newImageSize) {
+		setAttributes({ featuredImageSizeSlug: newImageSize });
 	}
 
 	function toggleDisplayAuthor(checked) {
@@ -72,14 +76,14 @@ export default function Edit({ attributes, setAttributes }) {
 							/>
 						</PanelRow>
 						<PanelRow>
-						<ToggleControl
+							<ToggleControl
 								label="Display Author"
 								checked={attributes.displayAuthor}
 								onChange={toggleDisplayAuthor}
 							/>
 						</PanelRow>
 						<PanelRow>
-						<ToggleControl
+							<ToggleControl
 								label="Display Post Date"
 								checked={attributes.displayPostDate}
 								onChange={toggleDisplayPostDate}
@@ -92,6 +96,28 @@ export default function Edit({ attributes, setAttributes }) {
 								onChange={toggleDisplayFeaturedImage}
 							/>
 						</PanelRow>
+						{attributes.displayFeaturedImage &&
+							<PanelRow>
+								<SelectControl
+									label={"Select image size"}
+									value={attributes.featuredImageSizeSlug}
+									onChange={changeImageSize}
+									options={[
+										{
+											label: 'Small',
+											value: 'thumbnail'
+										},
+										{
+											label: 'Medium',
+											value: 'medium'
+										},
+										{
+											label: 'Large',
+											value: 'large'
+										}
+									]}
+								/>
+							</PanelRow>}
 					</PanelBody>
 				</Panel>
 			</InspectorControls>
