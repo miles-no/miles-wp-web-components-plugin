@@ -14,7 +14,7 @@ import { __ } from '@wordpress/i18n';
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import ServerSideRender from '@wordpress/server-side-render';
 import {
-    Panel, PanelBody, PanelRow, __experimentalNumberControl as NumberControl
+    Panel, PanelBody, PanelRow, __experimentalNumberControl as NumberControl, TextControl, CheckboxControl
 } from '@wordpress/components';
 
 /**
@@ -36,14 +36,22 @@ import blockInfo from './block.json';
  */
 export default function Edit({ attributes, setAttributes }) {
 
-    const { start, end } = attributes;
+    const { start, end, episode_numbers, use_specific_episodes} = attributes;
 
     const handleChangeStart = (value) => {
-        setAttributes({ start: value });
+        setAttributes({ start: value.length > 0 ? value : 0 });
     };
 
-    const handleChangeStop = (value) => {
-        setAttributes({ stop: value });
+    const handleChangeEnd = (value) => {
+        setAttributes({ end: value.length > 0 ? value : 5});
+    }
+
+    const handleChangeSpecificEpisodes = (value) => {
+        setAttributes({ episode_numbers: value });
+    }
+
+    const handleChangeCheckBox = (value) => {
+        setAttributes({ use_specific_episodes: value });
     }
 
     return (
@@ -52,7 +60,16 @@ export default function Edit({ attributes, setAttributes }) {
                 <Panel header={'Podcast Feed'}>
                     <PanelBody title={"Podcast Feed Settings"}>
                         <PanelRow>
+                            <CheckboxControl
+                                label="Use Specific Episodes"
+                                onChange={handleChangeCheckBox}
+                                checked={use_specific_episodes}
+                                help="If checked, only the episodes listed in the specific episodes field will be displayed."
+                            />
+                        </PanelRow>
+                        <PanelRow>
                             <NumberControl
+                                disabled={use_specific_episodes}
                                 label="Start"
                                 onChange={handleChangeStart}
                                 value={start}
@@ -60,9 +77,18 @@ export default function Edit({ attributes, setAttributes }) {
                         </PanelRow>
                         <PanelRow>
                             <NumberControl
+                                disabled={use_specific_episodes}
                                 label="Stop"
-                                onChange={handleChangeStop}
+                                onChange={handleChangeEnd}
                                 value={end}
+                            />
+                        </PanelRow>
+                        <PanelRow>
+                            <TextControl
+                                label="Specific Episodes"
+                                onChange={handleChangeSpecificEpisodes}
+                                value={episode_numbers}
+                                help="Comma separated list of episode numbers."
                             />
                         </PanelRow>
                     </PanelBody>

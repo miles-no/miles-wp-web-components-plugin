@@ -18,7 +18,15 @@
         "end": {
             "type": "integer",
             "default": 5
-        }
+        },
+		"episode_numbers":{
+			"type": "string",
+			"default": ""
+		},
+		"use_specific_episodes":{
+			"type": "boolean",
+			"default": false
+		}
 	},
 	"textdomain": "miles-podcast-feed",
 	"editorScript": "file:./index.js",
