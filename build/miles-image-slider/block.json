@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "miles-blocks/miles-image-slider",
+  "version": "0.1.0",
+  "title": "Miles Image Carousel",
+  "category": "widgets",
+  "icon": "index-card",
+  "description": "Image carousel for Miles",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "inview": {
+      "type": "integer",
+      "default": 3
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "miles-image-slider",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
